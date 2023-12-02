@@ -1,3 +1,4 @@
+@import "../assets/css/main.scss";
 .top-to-btm {
   position: relative;
 }
@@ -8,7 +9,7 @@
   z-index: 20;
 }
 .top-to-btm .icon-style {
-  background-color: #6366f1;
+  background-color: $themecolor;
   // background: -webkit-linear-gradient(bottom, #064c3f 0%, #108060 100%);
   // background: -o-linear-gradient(bottom, #064c3f 0%, #108060 100%);
   // background: linear-gradient(to bottom, #064c3f 0%, #108060 100%);

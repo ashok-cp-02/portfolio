@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $themefont: ("Outfit", sans-serif);
-
+// $themecolor: #6366f1;
+// $themecolor: #ff014f;
+// $themecolor: #d74996;
+$themecolor: #015fe0;
 $themes: (
   light: (
     bg: white,
@@ -47,7 +50,7 @@ $themes: (
     themelight: #9ee86f,
     themedark: #173303,
     // p5px:5px,
-    // header,,,,,,,,,,,,,,,,,,,,,,,,,,
+    // header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
   ),
 );
 

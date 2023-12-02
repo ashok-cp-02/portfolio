@@ -12,7 +12,7 @@
 
 /* The slider */
 .checkbox-wrapper-54 .slider {
-  background-color: #6366f1;
+  background-color: $themecolor;
   transition: 0.4s;
   border-radius: 50%;
   padding: 10px;
@@ -42,7 +42,7 @@
 }
 
 .checkbox-wrapper-54 input:checked + .slider {
-  background-color: #6366f1;
+  background-color: $themecolor;
   svg {
     color: #ffffff;
   }

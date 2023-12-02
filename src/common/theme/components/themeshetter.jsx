@@ -6,8 +6,8 @@ import ThemeContext from "./contexts/themecontexts";
 // import { Image } from "react-bootstrap";
 // import SunIcon from "../img/sun.png";
 // import MoonIcon from "../img/moon.png";
-import { MdOutlineLightMode } from "react-icons/md";
-import { BsMoonStarsFill } from "react-icons/bs";
+import { BsSunFill } from "react-icons/bs";
+import { WiMoonAltWaningCrescent3 } from "react-icons/wi";
 export default function ThemeSetter() {
   const { theme, setTheme } = useContext(ThemeContext);
   const [checked, setChecked] = useState(theme === "light");
@@ -27,11 +27,11 @@ export default function ThemeSetter() {
             <span className="slider">
               {checked ? (
                 <>
-                  <BsMoonStarsFill />
+                  <WiMoonAltWaningCrescent3 />
                 </>
               ) : (
                 <>
-                  <MdOutlineLightMode />
+                  <BsSunFill />
                 </>
               )}
             </span>

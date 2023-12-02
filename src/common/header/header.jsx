@@ -21,7 +21,7 @@ import LogoDark from "./img/fmb-logo-dark.svg";
 // Responsive Img
 
 // Icons
-
+import { FaLaptopCode } from "react-icons/fa";
 // *******~ Import ~******** //
 
 const Header = (params) => {
@@ -34,12 +34,15 @@ const Header = (params) => {
           <div className="logo">
             <>
               <Nav.Link as={Link} to={"/"} eventKey={0}>
+                <span>
+                  <FaLaptopCode />
+                </span>
                 {/* {theme === "light" ? (
                   <Image src={LogoDark} alt="" />
                 ) : (
                   <Image src={LogoDark} alt="" />
                 )} */}
-                Ashok C
+                {"< Ashok C />"}
               </Nav.Link>
             </>
           </div>
