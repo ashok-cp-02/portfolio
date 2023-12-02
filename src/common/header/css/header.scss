@@ -8,7 +8,7 @@ $gray-bg: #f6f6f6;
 $white: #fff;
 $black: #000;
 nav.main-header {
-  padding: 12px 0px;
+  padding: 6px 0px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   @media (min-width: 992px) {
     &.navbar-expand-lg .navbar-collapse {
@@ -55,8 +55,16 @@ nav.main-header {
     }
   }
 
-  .logo img {
-    width: 175px;
+  .logo {
+    img {
+      width: 175px;
+    }
+    a {
+      font-family: $themefont;
+      font-size: 35px;
+      font-weight: 800;
+      color: #6366f1;
+    }
   }
   .navbar-nav {
     gap: 10px;

@@ -32,19 +32,16 @@ const Header = (params) => {
       <Navbar collapseOnSelect expand="lg" sticky="top" className="main-header">
         <Container>
           <div className="logo">
-            {theme === "light" ? (
-              <>
-                <Nav.Link as={Link} to={"/"} eventKey={0}>
+            <>
+              <Nav.Link as={Link} to={"/"} eventKey={0}>
+                {/* {theme === "light" ? (
                   <Image src={LogoDark} alt="" />
-                </Nav.Link>
-              </>
-            ) : (
-              <>
-                <Nav.Link as={Link} to={"/"} eventKey={0}>
+                ) : (
                   <Image src={LogoDark} alt="" />
-                </Nav.Link>
-              </>
-            )}
+                )} */}
+                Ashok C
+              </Nav.Link>
+            </>
           </div>
           <MenuBtn />
           <Navbar.Collapse id="responsive-navbar-nav">
