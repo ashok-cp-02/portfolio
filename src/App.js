@@ -1,11 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
 import Main from "./main";
+import ThemeSetter from "./common/theme/components/themeshetter";
+import ThemeProvider from "./common/theme/components/contexts/themeprovider";
 
 function App() {
   return (
     <>
-      <Main />
+      <ThemeProvider>
+        <ThemeSetter />
+        <Main />
+      </ThemeProvider>
     </>
   );
 }

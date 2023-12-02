@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$themefont: ("Outfit", sans-serif);
+
+$themes: (
+  light: (
+    bg: white,
+    text: black,
+  ),
+  dark: (
+    whitecolor: #fff,
+    black: #000,
+    light-green: #00c070,
+    green2: #108060,
+    green3: #186c60,
+    dark1: #070f1c,
+    dark2: #131927,
+    dark3: rgb(8 21 34),
+    dark4: #0a1929,
+    dark5: #02111f,
+    pinkcolor: #d92662,
+    none: none,
+    light-text: #b2bac2,
+    transparentbg: transparent,
+    hoverbg: #001e3c,
+    tblue: #276cf6,
+    tblue2: #607ee9,
+    hovercolor: #99ccf3,
+    boredr1: 1px solid,
+    menu-shadow: (
+      #001e3c 0px 1px 3px 0px,
+      #001e3c 0px 0px 0px 1px,
+    ),
+    div-shadow: (
+      #064d9369 0px 1px 0px 0px,
+      #064d9369 0px 0px 0px 1px,
+    ),
+    b-color: #064d9369,
+    // header
+    header-shadow: inset 0px -1px 1px #132f4c,
+    header-bg: rgb(8 21 34),
+    header-blur: blur(8px),
+    minus2px: -2px,
+    inputoutline: 3px solid #ffffff,
+    top54px: 54px,
+    top60px: 60px,
+    themelight: #9ee86f,
+    themedark: #173303,
+    // p5px:5px,
+    // header,,,,,,,,,,,,,,,,,,,,,,,,,,
+  ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}

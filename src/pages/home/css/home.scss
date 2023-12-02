@@ -1,0 +1,13 @@
+@import "../../../common/assets/css/main.scss";
+
+.home-page {
+  height: 1000px;
+  h1 {
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    color: #000;
+    font-family: $themefont;
+    font-size: 55px;
+    font-weight: 600;
+  }
+}

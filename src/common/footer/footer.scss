@@ -1,0 +1,17 @@
+@import "../assets/css/main.scss";
+
+footer {
+  height: 100px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    margin: 0px;
+    text-align: center;
+    color: #fff;
+    font-family: $themefont;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
