@@ -1,0 +1,99 @@
+@import "../../../../common/assets/css/main.scss";
+.slider {
+  padding: 50px 0px;
+  @include themed() {
+    background-color: t("themedark1");
+  }
+  span.sub-title {
+    color: #3c3e41;
+    font-family: $themefont;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    display: block;
+    @include themed() {
+      color: t("whitecolor");
+    }
+  }
+  h1 {
+    margin: 0px 0px 20px 0px;
+    color: #1e2125;
+    font-family: $themefont;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    @include themed() {
+      color: t("whitecolor");
+    }
+    span {
+      color: $themecolor;
+      display: inline-block;
+    }
+  }
+  p {
+    color: #3c3e41;
+    font-family: $themefont;
+    font-size: 18px;
+    text-transform: capitalize;
+    @include themed() {
+      color: t("whitecolor");
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .home-page {
+    span.sub-title {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      text-align: justify;
+    }
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 991px) {
+  .home-page {
+    span.sub-title {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      text-align: justify;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-page {
+    span.sub-title {
+      font-size: 15px;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .home-page {
+    h1 {
+      font-size: 42px;
+    }
+  }
+}

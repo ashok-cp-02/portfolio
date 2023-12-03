@@ -42,7 +42,7 @@ const Header = (params) => {
                 ) : (
                   <Image src={LogoDark} alt="" />
                 )} */}
-                {"< Ashok C />"}
+                {/* {"< Ashok C />"} */}
               </Nav.Link>
             </>
           </div>
