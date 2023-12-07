@@ -168,6 +168,12 @@
         color: #fff;
       }
       .details ul li {
+        &:hover {
+          a {
+            color: $themecolor;
+          }
+          color: $themecolor;
+        }
         color: #fff;
         a {
           color: #fff;
