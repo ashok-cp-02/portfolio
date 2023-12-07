@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.37388f20.css",
-    "main.js": "/portfolio/static/js/main.f920f149.js",
+    "main.css": "/portfolio/static/css/main.415bf7f0.css",
+    "main.js": "/portfolio/static/js/main.e292121d.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/slide.png": "/portfolio/static/media/slide.1a8ba02f73e3f7a87348.png",
+    "static/media/ASHOK-RESUME.pdf": "/portfolio/static/media/ASHOK-RESUME.662ea881cdd1ecf6f3bd.pdf",
     "static/media/mint-02.png": "/portfolio/static/media/mint-02.88e3966c4d6c6e3350a6.png",
     "static/media/mint-04.png": "/portfolio/static/media/mint-04.734cf8c4636933481ec9.png",
     "static/media/mint-01.png": "/portfolio/static/media/mint-01.fef1e2551b8c4c7d4083.png",
@@ -12,12 +13,12 @@
     "static/media/fmb-logo-dark.svg": "/portfolio/static/media/fmb-logo-dark.9f105b21957eafdf3eb8b1e1c28fb0d2.svg",
     "index.html": "/portfolio/index.html",
     "static/media/gradient-circle.svg": "/portfolio/static/media/gradient-circle.e47cacd603d34459767d4f18f442fda6.svg",
-    "main.37388f20.css.map": "/portfolio/static/css/main.37388f20.css.map",
-    "main.f920f149.js.map": "/portfolio/static/js/main.f920f149.js.map",
+    "main.415bf7f0.css.map": "/portfolio/static/css/main.415bf7f0.css.map",
+    "main.e292121d.js.map": "/portfolio/static/js/main.e292121d.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37388f20.css",
-    "static/js/main.f920f149.js"
+    "static/css/main.415bf7f0.css",
+    "static/js/main.e292121d.js"
   ]
 }
