@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fcd15916.css",
+    "main.css": "/portfolio/static/css/main.ff0f92b5.css",
     "main.js": "/portfolio/static/js/main.22763d8d.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/slide.png": "/portfolio/static/media/slide.1a8ba02f73e3f7a87348.png",
@@ -14,12 +14,12 @@
     "static/media/fmb-logo-dark.svg": "/portfolio/static/media/fmb-logo-dark.9f105b21957eafdf3eb8b1e1c28fb0d2.svg",
     "index.html": "/portfolio/index.html",
     "static/media/gradient-circle.svg": "/portfolio/static/media/gradient-circle.e47cacd603d34459767d4f18f442fda6.svg",
-    "main.fcd15916.css.map": "/portfolio/static/css/main.fcd15916.css.map",
+    "main.ff0f92b5.css.map": "/portfolio/static/css/main.ff0f92b5.css.map",
     "main.22763d8d.js.map": "/portfolio/static/js/main.22763d8d.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcd15916.css",
+    "static/css/main.ff0f92b5.css",
     "static/js/main.22763d8d.js"
   ]
 }
