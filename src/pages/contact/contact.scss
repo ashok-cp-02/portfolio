@@ -1,0 +1,178 @@
+@import "../../common/assets/css/main.scss";
+.offcanvas.contact-canva {
+  .offcanvas-body {
+    span.back-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: $themecolor;
+      cursor: pointer;
+      svg {
+        font-size: 18px;
+        color: #fff;
+        margin-left: -2px;
+      }
+    }
+    .content {
+      .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        img {
+          $size: 200px;
+          width: $size;
+          height: $size;
+          object-fit: cover;
+          border-radius: 50%;
+          object-position: top;
+          box-shadow: rgb(0 0 0 / 48%) 0px 0px 10px;
+          border: 3px solid #fff;
+        }
+        h3 {
+          margin: 0px 0px 0px 0px;
+          color: #1e2125;
+          font-family: $themefont;
+          font-size: 30px;
+          font-weight: 800;
+          letter-spacing: 3px;
+          line-height: 1;
+          @include themed() {
+            color: t("whitecolor");
+          }
+        }
+        p {
+          color: $themecolor;
+          font-family: $themefont;
+          font-size: 22px;
+          text-transform: capitalize;
+          margin: 0px;
+          font-weight: 600;
+          @include themed() {
+            color: t("whitecolor");
+          }
+        }
+        ul {
+          padding: 0px;
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          list-style-type: none;
+          z-index: 1;
+          position: relative;
+          li {
+            a {
+              width: 40px;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50px;
+              $svg-size: 21px;
+              svg {
+                font-size: $svg-size;
+                color: #fff;
+              }
+              &.git {
+                background-color: #000;
+                svg {
+                  font-size: calc($svg-size + 4px);
+                }
+              }
+              &.linkedin {
+                background-color: #0e76a8;
+              }
+              &.mail {
+                background-color: #ea4335;
+              }
+              &.profile {
+                background-color: #f48024;
+              }
+            }
+          }
+        }
+      }
+      .details {
+        ul {
+          padding: 0px;
+          margin: 30px 0px 0px 0px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 25px;
+          list-style-type: none;
+          position: relative;
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            font-family: $themefont;
+            font-weight: 500;
+            font-size: 17px;
+            color: #0e0739;
+            cursor: pointer;
+            &:hover {
+              span {
+                border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+              }
+              a {
+                color: $themecolor;
+              }
+              color: $themecolor;
+            }
+            a {
+              text-decoration: none;
+              color: #0e0739;
+            }
+            span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              height: 40px;
+              background-color: $themecolor;
+              cursor: pointer;
+              border-radius: 70% 30% 30% 70%/70% 70% 30% 30%;
+              transition: all ease 300ms;
+              -moz-transition: all ease 300ms;
+              -webkit-transition: all ease 300ms;
+              -o-transition: all ease 300ms;
+              -ms-transition: all ease 300ms;
+              svg {
+                font-size: 22px;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.offcanvas.contact-canva.dark-theme {
+  .offcanvas-body {
+    background-color: #0e0739;
+    .content {
+      .heading h3 {
+        color: #fff;
+      }
+      .details ul li {
+        color: #fff;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

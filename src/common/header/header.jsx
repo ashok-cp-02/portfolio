@@ -62,7 +62,7 @@ const Header = (params) => {
     },
     {
       menu: " Project",
-      url: "/project",
+      url: "/#project",
       as: HashLink,
     },
     {

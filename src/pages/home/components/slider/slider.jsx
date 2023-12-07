@@ -7,6 +7,7 @@ import Typewriter from "typewriter-effect";
 //? Components
 import myResumePDF from "../../../../common/assets/ASHOK-RESUME.pdf";
 import Contact from "../../../contact/contact";
+import Social from "../social";
 // CSS
 import "./slider.scss";
 // Images
@@ -15,10 +16,7 @@ import SliderImg from "./img/slide.png";
 //? JSON File
 
 //? Icons
-import { GrDocumentUser } from "react-icons/gr";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+
 import { GrDocumentDownload } from "react-icons/gr";
 import { MdOutlineContacts } from "react-icons/md";
 
@@ -34,13 +32,14 @@ const Slider = () => {
     link.download = "ashok-resume.pdf";
     link.click();
   };
+
   return (
     <>
       <span id="home"></span>
       <section className="slider">
         <Container>
           <Row className="align-items-center justify-content-between">
-            <Col xxl={6} md={7}>
+            <Col xxl={6} md={6}>
               <span className="sub-title">WELCOME TO MY WORLD</span>
               <h1>
                 Hi, I’m Ashok C <br />a{" "}
@@ -74,32 +73,9 @@ const Slider = () => {
                   <GrDocumentDownload /> Resume
                 </button>
               </div>
-              <ul>
-                <li>
-                  <a className="git" href="#">
-                    <FaGithub />
-                  </a>
-                </li>
-                <li>
-                  <a className="linkedin" href="#">
-                    {" "}
-                    <FaLinkedinIn />
-                  </a>
-                </li>
-                <li>
-                  <a className="mail" href="#">
-                    <IoMdMail />
-                  </a>
-                </li>
-                <li>
-                  <a className="profile" href="#">
-                    {" "}
-                    <GrDocumentUser />
-                  </a>
-                </li>
-              </ul>
+              <Social />
             </Col>
-            <Col xxl={5} md={5}>
+            <Col xxl={5} md={6}>
               <Image src={SliderImg} fluid alt="" title="" />
             </Col>
           </Row>
