@@ -8,11 +8,13 @@ import Image from "react-bootstrap/Image";
 //? Components
 import Social from "../home/components/social";
 import ThemeContext from "../../common/theme/components/contexts/themecontexts";
+import myResumePDF from "../../common/assets/ASHOK-RESUME.pdf";
 //? CSS
 import "./contact.scss";
 //? Images
 // import Photo from "./img/Ashok.jpg";
 import Photo from "./img/ashok1.jpg";
+import BGImg from "./img/bg1.jpg";
 
 //? JSON File
 
@@ -22,11 +24,20 @@ import { IoMailOutline } from "react-icons/io5";
 import { VscCallIncoming } from "react-icons/vsc";
 import { CiCalendar } from "react-icons/ci";
 import { SlGraduation } from "react-icons/sl";
+import { IoLocationSharp } from "react-icons/io5";
+import { PiToolboxLight } from "react-icons/pi";
+import { LuDownload } from "react-icons/lu";
 // *******~ Import ~******** //
 
 function Contact({ Contactshow, setContactshow }) {
   const handleClose = () => setContactshow(false);
   const { theme } = useContext(ThemeContext);
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = myResumePDF;
+    link.download = "ashok-resume.pdf"; // Change the filename as needed
+    link.click();
+  };
   return (
     <>
       <Offcanvas
@@ -36,19 +47,33 @@ function Contact({ Contactshow, setContactshow }) {
         className={`contact-canva ${theme === "dark" && "dark-theme"}`}
       >
         <Offcanvas.Body>
-          <span className="back-btn" onClick={handleClose}>
-            <FaChevronLeft />
-          </span>
-
           <div className="content">
+            <div className="header-img">
+              <div className="overlay"></div>
+              <Image src={BGImg} fluid />
+              <span className="back-btn" onClick={handleClose}>
+                <FaChevronLeft />
+              </span>
+            </div>
             <div className="heading">
-              <Image src={Photo} fluid />
+              {/* <Image src={BGImg} fluid className="bg-img" /> */}
+
+              <Image src={Photo} fluid className="profile" />
               <h3>Ashok C</h3>
               <p>Front End Developer</p>
+              <span className="location">
+                <IoLocationSharp /> Chennai, India
+              </span>
               <Social />
             </div>
             <div className="details">
               <ul>
+                <li>
+                  <span>
+                    <PiToolboxLight />
+                  </span>
+                  5+ Years of Experience
+                </li>
                 <li>
                   <span>
                     <IoMailOutline />
@@ -73,9 +98,15 @@ function Contact({ Contactshow, setContactshow }) {
                   <span>
                     <SlGraduation />
                   </span>
-                  B.Sc.Computer Science.,
+                  B.Sc.Computer Science
                 </li>
               </ul>
+            </div>
+            <div className="download-cv">
+              <button onClick={handleDownload}>
+                <LuDownload />
+                Download CV
+              </button>
             </div>
           </div>
         </Offcanvas.Body>

@@ -16,6 +16,8 @@ import { GrDocumentUser } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { SiStackblitz } from "react-icons/si";
+import { FaStackOverflow } from "react-icons/fa";
 
 // *******~ Import ~******** //
 
@@ -54,10 +56,25 @@ const Social = () => {
           </a>
         </li>
         <li>
+          <a
+            className="stack"
+            href="https://stackblitz.com/@ashok-cp-02"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiStackblitz />
+          </a>
+        </li>
+        <li>
+          <a className="stackover" href="#" rel="noopener noreferrer">
+            <FaStackOverflow />
+          </a>
+        </li>
+        {/* <li>
           <a className="profile" href="#" rel="noopener noreferrer">
             <GrDocumentUser />
           </a>
-        </li>
+        </li> */}
       </ul>
     </>
   );

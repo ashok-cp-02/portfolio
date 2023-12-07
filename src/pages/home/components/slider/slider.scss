@@ -70,7 +70,7 @@
             color: #fff;
           }
           &.git {
-            background-color: #000;
+            background-color: #333;
             svg {
               font-size: calc($svg-size + 4px);
             }
@@ -82,6 +82,12 @@
             background-color: #ea4335;
           }
           &.profile {
+            background-color: #f48024;
+          }
+          &.stack {
+            background-color: #1389fd;
+          }
+          &.stackover {
             background-color: #f48024;
           }
         }
@@ -170,6 +176,7 @@
       }
       ul {
         margin-bottom: 30px;
+        gap: 20px;
       }
     }
   }
