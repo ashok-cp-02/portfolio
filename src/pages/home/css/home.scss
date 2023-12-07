@@ -1,5 +1,12 @@
 @import "../../../common/assets/css/main.scss";
-
+.home-page {
+  margin-top: 100px;
+}
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+  .home-page {
+    margin-top: 68px;
+  }
+}
 .gradient-position {
   position: absolute;
   left: 0;

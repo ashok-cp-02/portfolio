@@ -22,70 +22,74 @@ import Icon4 from "./img/mint-04.png";
 
 const Mint = () => {
   return (
-    <section className="how-mint">
-      <Container>
-        <Row>
-          <Col xxl={12}>
-            <div className="heading-content">
-              <h2>How to mint</h2>
-              <p>
-                Use Trust Wallet, Metamask or any wallet to connect to the app.
-              </p>
-            </div>
-          </Col>
-        </Row>
-        <Row className="justify-content-center mint-row">
-          <Col xxl={5}>
-            <div className="content-box">
-              <Image src={Icon1} fluid />
-              <div className="content">
-                <h3>Connect your wallet</h3>
+    <>
+      <span id="about"></span>
+      <section className="how-mint">
+        <Container>
+          <Row>
+            <Col xxl={12}>
+              <div className="heading-content">
+                <h2>How to mint</h2>
                 <p>
                   Use Trust Wallet, Metamask or any wallet to connect to the
                   app.
                 </p>
               </div>
-            </div>
-          </Col>
-          <Col xxl={5}>
-            <div className="content-box">
-              <Image src={Icon2} fluid />
-              <div className="content">
-                <h3>Connect your wallet</h3>
-                <p>
-                  Use Trust Wallet, Metamask or any wallet to connect to the
-                  app.
-                </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center mint-row">
+            <Col xxl={5}>
+              <div className="content-box">
+                <Image src={Icon1} fluid />
+                <div className="content">
+                  <h3>Connect your wallet</h3>
+                  <p>
+                    Use Trust Wallet, Metamask or any wallet to connect to the
+                    app.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col xxl={5}>
-            <div className="content-box">
-              <Image src={Icon3} fluid />
-              <div className="content">
-                <h3>Connect your wallet</h3>
-                <p>
-                  Use Trust Wallet, Metamask or any wallet to connect to the
-                  app.
-                </p>
+            </Col>
+            <Col xxl={5}>
+              <div className="content-box">
+                <Image src={Icon2} fluid />
+                <div className="content">
+                  <h3>Connect your wallet</h3>
+                  <p>
+                    Use Trust Wallet, Metamask or any wallet to connect to the
+                    app.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Col>
-          <Col xxl={5}>
-            <div className="content-box">
-              <Image src={Icon4} fluid />
-              <div className="content">
-                <h3>Connect your wallet</h3>
-                <p>
-                  Use Trust Wallet, Metamask or any wallet to connect to the
-                  app.
-                </p>
+            </Col>
+            <Col xxl={5}>
+              <div className="content-box">
+                <Image src={Icon3} fluid />
+                <div className="content">
+                  <h3>Connect your wallet</h3>
+                  <p>
+                    Use Trust Wallet, Metamask or any wallet to connect to the
+                    app.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+            </Col>
+            <Col xxl={5}>
+              <div className="content-box">
+                <Image src={Icon4} fluid />
+                <div className="content">
+                  <h3>Connect your wallet</h3>
+                  <p>
+                    Use Trust Wallet, Metamask or any wallet to connect to the
+                    app.
+                  </p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </>
   );
 };
 export default Mint;

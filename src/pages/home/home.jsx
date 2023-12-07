@@ -20,7 +20,7 @@ export default function Home(second) {
       <MetData />
       <section className="home-page">
         <Slider />
-        <Mint />
+        {/* <Mint /> */}
       </section>
     </>
   );

@@ -14,6 +14,7 @@ import "./footer.scss";
 //? JSON File
 
 //? Icons
+import { IoHeart } from "react-icons/io5";
 // *******~ Import ~******** //
 
 const Footer = () => {
@@ -22,7 +23,10 @@ const Footer = () => {
       <Container>
         <Row>
           <Col xxl={12}>
-            <p>Footer Section</p>
+            <p>
+              &copy; {new Date().getFullYear()}, Made With <IoHeart /> by Ashok
+              C
+            </p>
           </Col>
         </Row>
       </Container>

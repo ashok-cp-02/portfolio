@@ -1,17 +1,20 @@
 @import "../assets/css/main.scss";
 
 footer {
-  height: 100px;
   background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px 0px;
   p {
     margin: 0px;
     text-align: center;
     color: #fff;
     font-family: $themefont;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
+    svg {
+      color: $themecolor;
+    }
   }
 }

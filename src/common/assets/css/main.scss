@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $themefont: ("Outfit", sans-serif);
+$themefont2: ("Monomaniac One", sans-serif);
+
 // $themecolor: #6366f1;
-// $themecolor: #ff014f;
+$themecolor: #ff014f;
 // $themecolor: #d74996;
-$themecolor: #015fe0;
+// $themecolor: #015fe0;
 $themes: (
   light: (
     bg: white,
@@ -12,7 +14,7 @@ $themes: (
   ),
   dark: (
     whitecolor: #fff,
-    black: #000,
+    blackcolor: #000,
     light-green: #00c070,
     green2: #108060,
     green3: #186c60,
@@ -53,7 +55,7 @@ $themes: (
     // header,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
     // New Theme
     themedark1: #0d0620,
-    themedark2: #0d06209c,
+    themedark2: rgb(13 6 32 / 75%),
   ),
 );
 
@@ -78,4 +80,15 @@ $themes: (
 
 @function t($key) {
   @return map-get($theme-map, $key);
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: $themecolor;
+}
+
+::selection {
+  color: #fff;
+  background: $themecolor;
 }
