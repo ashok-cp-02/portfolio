@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.84f39b56.css",
-    "main.js": "/portfolio/static/js/main.f7adcf5f.js",
+    "main.css": "/portfolio/static/css/main.43e6b4b0.css",
+    "main.js": "/portfolio/static/js/main.4608076e.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/slide.png": "/portfolio/static/media/slide.1a8ba02f73e3f7a87348.png",
     "static/media/ASHOK-RESUME.pdf": "/portfolio/static/media/ASHOK-RESUME.662ea881cdd1ecf6f3bd.pdf",
@@ -15,12 +15,12 @@
     "static/media/fmb-logo-dark.svg": "/portfolio/static/media/fmb-logo-dark.9f105b21957eafdf3eb8b1e1c28fb0d2.svg",
     "index.html": "/portfolio/index.html",
     "static/media/gradient-circle.svg": "/portfolio/static/media/gradient-circle.e47cacd603d34459767d4f18f442fda6.svg",
-    "main.84f39b56.css.map": "/portfolio/static/css/main.84f39b56.css.map",
-    "main.f7adcf5f.js.map": "/portfolio/static/js/main.f7adcf5f.js.map",
+    "main.43e6b4b0.css.map": "/portfolio/static/css/main.43e6b4b0.css.map",
+    "main.4608076e.js.map": "/portfolio/static/js/main.4608076e.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84f39b56.css",
-    "static/js/main.f7adcf5f.js"
+    "static/css/main.43e6b4b0.css",
+    "static/js/main.4608076e.js"
   ]
 }
