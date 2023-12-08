@@ -4,6 +4,8 @@ import { useState } from "react";
 //? Assets
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
+import { Player } from "@lottiefiles/react-lottie-player";
+import AboutLottie from "./img/slider1.json";
 //? Components
 import myResumePDF from "../../../../common/assets/ASHOK-RESUME.pdf";
 import Contact from "../../../contact/contact";
@@ -35,7 +37,6 @@ const Slider = () => {
 
   return (
     <>
-      <span id="home"></span>
       <section className="slider">
         <Container>
           <Row className="align-items-center justify-content-between">
@@ -60,7 +61,10 @@ const Slider = () => {
               <p>
                 "Having over 5 years of experience in building web applications
                 with a responsive layout using
-                <span>HTML5, CSS3, JavaScript, React.js, SASS, Bootstrap </span>
+                <span>
+                  {" "}
+                  HTML5, CSS3, JavaScript, React.js, SASS, Bootstrap{" "}
+                </span>
                 and various other libraries and frameworks."
               </p>
 
@@ -76,7 +80,10 @@ const Slider = () => {
               <Social />
             </Col>
             <Col xxl={5} md={6}>
-              <Image src={SliderImg} fluid alt="" title="" />
+              {/* <Image src={SliderImg} fluid alt="" title="" /> */}
+              <div className="lottie-ani">
+                <Player autoplay loop src={AboutLottie}></Player>
+              </div>
             </Col>
           </Row>
         </Container>
