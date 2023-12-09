@@ -5,22 +5,25 @@ export default function MetData() {
   return (
     <Helmet>
       <title>
-        Ashok C | UI Developer | Front-End Developer | React Developer
+        Ashok C | Front-End Developer | UI Developer | React Developer
       </title>
       <meta
         name="description"
-        content="Ashok C | UI Developer | Front-End Developer | React Developer"
+        content="Crazy Front End Developer Who Wants to Explore
+        Every Tech Staks"
       />
       <meta
         name="keywords"
-        content="Ashok C | UI Developer | Front-End Developer | React Developer"
+        content="Crazy Front End Developer Who Wants to Explore
+        Every Tech Staks"
       />
       <meta name="author" content="Ashok C" />
       <link rel="canonical" href="https://ashok-cp-02.github.io/portfolio/" />
 
       <meta
         property="og:title"
-        content="Ashok C | UI Developer | Front-End Developer | React Developer"
+        content="Crazy Front End Developer Who Wants to Explore
+        Every Tech Staks"
       />
       <meta
         property="og:url"
@@ -32,7 +35,8 @@ export default function MetData() {
       <meta property="og:site_name" content="Ashok C | Portfolio" />
       <meta
         property="og:description"
-        content="Ashok C | UI Developer | Front-End Developer | React Developer"
+        content="Crazy Front End Developer Who Wants to Explore
+        Every Tech Staks"
       />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="Ashok C | Portfolio" />

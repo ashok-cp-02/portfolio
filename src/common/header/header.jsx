@@ -73,7 +73,7 @@ const Header = (params) => {
   ];
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -75;
+    const yOffset = -70;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
   const handleDownload = () => {

@@ -24,8 +24,15 @@ const Footer = () => {
         <Row>
           <Col xxl={12}>
             <p>
-              &copy; {new Date().getFullYear()}, Made With <IoHeart /> by Ashok
-              C
+              &copy; {new Date().getFullYear()}, Made With <IoHeart /> by{" "}
+              <a
+                title="linkedin"
+                href="https://www.linkedin.com/in/ashokchinnaiyan/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ashok C
+              </a>
             </p>
           </Col>
         </Row>
