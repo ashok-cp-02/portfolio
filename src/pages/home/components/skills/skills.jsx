@@ -87,6 +87,13 @@ const Skills = () => {
       Img: Jqueryicon,
       value: 95,
     },
+    {
+      Name: "Bootstrap",
+      CName: "jquery",
+      Icon: <SiJavascript />,
+      Img: Jqueryicon,
+      value: 95,
+    },
   ];
   return (
     <>
