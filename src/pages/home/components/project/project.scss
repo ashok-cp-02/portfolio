@@ -1,0 +1,33 @@
+@import "../../../../common/assets/css/main.scss";
+
+.home-page {
+  .project-section {
+    padding: 80px 0px;
+    .heading {
+      margin-bottom: 50px;
+      h2 {
+        color: $themecolor;
+        margin: 0px 0px 10px 0px;
+        font-family: $themefont;
+        font-size: 35px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 1;
+        text-align: center;
+      }
+      p {
+        color: #000;
+        text-align: center;
+        font-family: $themefont;
+        // font-weight: 500;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 0px;
+        // line-height: normal;
+        @include themed() {
+          color: t("whitecolor");
+        }
+      }
+    }
+  }
+}

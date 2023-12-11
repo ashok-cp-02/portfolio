@@ -1,12 +1,14 @@
 // *******~ Import ~******** //
 //? React
-import React from "react";
+
 //? Assets
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import ProgressBar from "react-bootstrap/ProgressBar";
+
+// import "aos/dist/aos.css"; // Import the AOS styles
 //? Components
 
 //? CSS
@@ -20,6 +22,12 @@ import Reacticon from "./img/reactjs_icon.svg";
 import Reduxicon from "./img/redux_icon.svg";
 import Jqueryicon from "./img/jquery_icon.svg";
 import Resticon from "./img/restful_icon.svg";
+import Booticon from "./img/bootstrap-5-1.svg";
+import ReactBooticon from "./img/react-boot.svg";
+import MUIicon from "./img/material-ui-1.svg";
+import GITicon from "./img/git-icon.svg";
+import VSCodeicon from "./img/vscode.svg";
+// import Sourceicon from "./img/sourcetree-1.svg";
 //? JSON File
 
 //? Icons
@@ -30,7 +38,11 @@ import { IoLogoSass } from "react-icons/io5";
 // *******~ Import ~******** //
 
 const Skills = () => {
-  const KeySlill = [
+  // useEffect(() => {
+  //   AOS.init({});
+  // }, []);
+
+  const KeySkill = [
     {
       Name: "HTML",
       CName: "html",
@@ -53,32 +65,18 @@ const Skills = () => {
       value: 90,
     },
     {
+      Name: "Bootstrap",
+      CName: "boots",
+      Icon: <SiJavascript />,
+      Img: Booticon,
+      value: 90,
+    },
+    {
       Name: "Sass",
       CName: "sass",
       Icon: <IoLogoSass />,
       Img: SASSicon,
       value: 90,
-    },
-    {
-      Name: "React Js",
-      CName: "reactjs",
-      Icon: <SiJavascript />,
-      Img: Reacticon,
-      value: 90,
-    },
-    {
-      Name: "React Redux",
-      CName: "reactredux",
-      Icon: <SiJavascript />,
-      Img: Reduxicon,
-      value: 50,
-    },
-    {
-      Name: "RESTFul API",
-      CName: "restful",
-      Icon: <SiJavascript />,
-      Img: Resticon,
-      value: 50,
     },
     {
       Name: "JQuery",
@@ -88,13 +86,64 @@ const Skills = () => {
       value: 95,
     },
     {
-      Name: "Bootstrap",
-      CName: "jquery",
+      Name: "React Js",
+      CName: "reactjs",
       Icon: <SiJavascript />,
-      Img: Jqueryicon,
-      value: 95,
+      Img: Reacticon,
+      value: 90,
     },
+    {
+      Name: "React Bootstrap",
+      CName: "reactboots",
+      Icon: <SiJavascript />,
+      Img: ReactBooticon,
+      value: 90,
+    },
+    {
+      Name: "Material UI",
+      CName: "materialui",
+      Icon: <SiJavascript />,
+      Img: MUIicon,
+      value: 75,
+    },
+    {
+      Name: "React Redux",
+      CName: "reactredux",
+      Icon: <SiJavascript />,
+      Img: Reduxicon,
+      value: 75,
+    },
+    {
+      Name: "RESTFul API",
+      CName: "restful",
+      Icon: <SiJavascript />,
+      Img: Resticon,
+      value: 75,
+    },
+
+    {
+      Name: "GIT",
+      CName: "git",
+      Icon: <SiJavascript />,
+      Img: GITicon,
+      value: 85,
+    },
+    {
+      Name: "VS Code",
+      CName: "vscode",
+      Icon: <SiJavascript />,
+      Img: VSCodeicon,
+      value: 85,
+    },
+    // {
+    //   Name: "Sourcetree",
+    //   CName: "sourcetree",
+    //   Icon: <SiJavascript />,
+    //   Img: Sourceicon,
+    //   value: 85,
+    // },
   ];
+
   return (
     <>
       <span id="skills"></span>
@@ -103,8 +152,8 @@ const Skills = () => {
           <Row>
             <Col xxl={12}>
               <div className="heading">
-                <h2>Key Skills</h2>
-                <p>
+                <h2 data-aos="fade-up">Technical Skills</h2>
+                <p data-aos="fade-up">
                   As a front-end developer, I am proficient in various
                   technologies Below <br />
                   And Various Other Libraries And Frameworks.
@@ -113,17 +162,16 @@ const Skills = () => {
             </Col>
             <Col xxl={12}>
               <ul className="skill-list">
-                {KeySlill.map((Skill, index) => (
+                {KeySkill.map((Skill, index) => (
                   <>
-                    <li>
-                      <div className="skill-box">
+                    <li className={`${Skill.CName}-list`}>
+                      <div className="skill-box" data-aos="flip-right">
                         {/* <span>{Skill.Icon}</span> */}
                         <Image src={Skill.Img} fluid />
                         <p>{Skill.Name}</p>
                       </div>
 
                       <ProgressBar
-                        className={`${Skill.CName}-progress`}
                         now={Skill.value}
                         animated
                         label={`${Skill.value}%`}

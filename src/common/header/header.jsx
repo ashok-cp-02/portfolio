@@ -66,8 +66,8 @@ const Header = (params) => {
       as: HashLink,
     },
     {
-      menu: "Education",
-      url: "/#education",
+      menu: "Educational",
+      url: "/#educational",
       as: HashLink,
     },
   ];

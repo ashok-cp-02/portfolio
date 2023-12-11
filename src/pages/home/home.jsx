@@ -4,9 +4,12 @@
 
 // Components
 import Slider from "./components/slider/slider";
-import Mint from "./components/mint/mint";
+// import Mint from "./components/mint/mint";
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
+import Education from "./components/education/education";
+import Experiences from "./components/exprience/experiences";
+import Project from "./components/project/project";
 // CSS
 import "./css/home.scss";
 // Images
@@ -25,6 +28,10 @@ export default function Home(second) {
         <Slider />
         <About />
         <Skills />
+        {/* <Experiences /> */}
+        {/* <Project /> */}
+        <Education />
+
         {/* <Mint /> */}
       </section>
     </>

@@ -29,8 +29,9 @@ const About = () => {
   const AboutContent = [
     "I have over 5 years of experience in Frontend UI Development, with expertise in HTML, CSS, SASS, JavaScript, Bootstrap, and various other libraries and frameworks.",
     "I have past 2 years of experience in React JS, a popular JavaScript library. I have utilized NPM along with React Bootstrap, Material UI, React Router Dom, Sass, React Icons, and other related technologies.",
-    "As a front-end developer, I am proficient in various technologies such as HTML, CSS, SASS, JavaScript, and React JS, SASS, Bootstrap And Various Other Libraries And Frameworks.",
     "I possess a keen eye for detail and have the ability to translate wireframes and design concepts into pixel-perfect creations. I excel in developing highly interactive front-end user interfaces for web applications, ensuring responsive layouts.",
+    "Ensured cross-browser compatibility and responsiveness using media queries and flexbox/grid layouts.",
+    "Managed codebase efficiently using Git and GitHub for version control.",
   ];
   return (
     <>
@@ -45,8 +46,8 @@ const About = () => {
             </Col>
             <Col xxl={7} md={12} lg={7}>
               <div className="heading">
-                <h2>About Me</h2>
-                <p>
+                <h2 data-aos="fade-up">About Me</h2>
+                <p data-aos="fade-up">
                   “Crazy <span>Front End Developer</span> Who Wants to Explore
                   Every Tech Staks”
                 </p>
@@ -54,7 +55,7 @@ const About = () => {
               <ul>
                 {AboutContent.map((data, index) => (
                   <>
-                    <li key={index}>
+                    <li key={index} data-aos="fade-up">
                       <VscDebugBreakpointLog /> <p>{data}</p>
                     </li>
                   </>
