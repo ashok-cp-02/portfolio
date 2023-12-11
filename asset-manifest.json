@@ -1,16 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.02525dce.css",
-    "main.js": "/portfolio/static/js/main.6965e574.js",
+    "main.css": "/portfolio/static/css/main.7aeb8758.css",
+    "main.js": "/portfolio/static/js/main.7f2da6d6.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/slide.png": "/portfolio/static/media/slide.1a8ba02f73e3f7a87348.png",
     "static/media/ASHOK-RESUME.pdf": "/portfolio/static/media/ASHOK-RESUME.662ea881cdd1ecf6f3bd.pdf",
     "static/media/bg1.jpg": "/portfolio/static/media/bg1.db96fcb419daff0f494e.jpg",
     "static/media/ashok1.jpg": "/portfolio/static/media/ashok1.82fa2021bfb4b05443de.jpg",
-    "static/media/mint-02.png": "/portfolio/static/media/mint-02.88e3966c4d6c6e3350a6.png",
-    "static/media/mint-04.png": "/portfolio/static/media/mint-04.734cf8c4636933481ec9.png",
-    "static/media/mint-01.png": "/portfolio/static/media/mint-01.fef1e2551b8c4c7d4083.png",
-    "static/media/mint-03.png": "/portfolio/static/media/mint-03.56739242fa15c11f9ef5.png",
     "static/media/fmb-logo-white.svg": "/portfolio/static/media/fmb-logo-white.32d52d577a22ae294d56c835e616da35.svg",
     "static/media/fmb-logo-dark.svg": "/portfolio/static/media/fmb-logo-dark.9f105b21957eafdf3eb8b1e1c28fb0d2.svg",
     "static/media/restful_icon.svg": "/portfolio/static/media/restful_icon.7a0cd1478e0c2f33ab8390f84e605933.svg",
@@ -22,19 +18,18 @@
     "static/media/bootstrap-5-1.svg": "/portfolio/static/media/bootstrap-5-1.98585727bcfe0b1555649ec9bbab236c.svg",
     "index.html": "/portfolio/index.html",
     "static/media/git-icon.svg": "/portfolio/static/media/git-icon.c60b7e5ae8ec2562f23fdddcab300026.svg",
-    "static/media/sourcetree-1.svg": "/portfolio/static/media/sourcetree-1.31e135374d03ccd50c1ee71cd09ddf72.svg",
     "static/media/vscode.svg": "/portfolio/static/media/vscode.b8b1e001813039750e6c05c236ab0d46.svg",
     "static/media/javascript_icon.svg": "/portfolio/static/media/javascript_icon.8273f943b7a9716f914c251c9fec4964.svg",
     "static/media/css_icon.svg": "/portfolio/static/media/css_icon.604771ddfc62c455d5d34638b486c1b0.svg",
     "static/media/html5_icon.svg": "/portfolio/static/media/html5_icon.5e5e1b61b03a10f31a348d2688e3d567.svg",
     "static/media/gradient-circle.svg": "/portfolio/static/media/gradient-circle.e47cacd603d34459767d4f18f442fda6.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
-    "main.02525dce.css.map": "/portfolio/static/css/main.02525dce.css.map",
-    "main.6965e574.js.map": "/portfolio/static/js/main.6965e574.js.map",
+    "main.7aeb8758.css.map": "/portfolio/static/css/main.7aeb8758.css.map",
+    "main.7f2da6d6.js.map": "/portfolio/static/js/main.7f2da6d6.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02525dce.css",
-    "static/js/main.6965e574.js"
+    "static/css/main.7aeb8758.css",
+    "static/js/main.7f2da6d6.js"
   ]
 }
