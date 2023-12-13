@@ -12,7 +12,7 @@ import React from "react";
 //? JSON File
 
 //? Icons
-import { GrDocumentUser } from "react-icons/gr";
+// import { GrDocumentUser } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";

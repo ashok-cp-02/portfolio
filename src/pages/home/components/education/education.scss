@@ -70,7 +70,8 @@
         }
         .accordion-collapse {
           .accordion-body {
-            padding: 0px 25px 25px 25px;
+            padding: 25px 25px 25px 25px;
+            border-top: 2px solid $themecolor;
             p {
               color: #000;
               font-family: $themefont;
@@ -81,8 +82,12 @@
               display: flex;
               gap: 10px;
               align-items: center;
+              &:last-child {
+                margin-bottom: 0px;
+              }
               svg {
                 color: $themecolor;
+                margin-bottom: 5px;
               }
               @include themed() {
                 color: t("whitecolor");
@@ -192,6 +197,7 @@
           font-size: 16px;
           svg {
             font-size: 20px;
+            margin-bottom: 2px;
           }
           span {
             &:first-child {

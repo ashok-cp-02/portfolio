@@ -51,7 +51,7 @@ const Main = () => {
         <GoTop />
         <ScrollToTop />
         <Header />
-        <main>
+        <main className="ashok-portfolio">
           <Routing />
         </main>
         <Footer />

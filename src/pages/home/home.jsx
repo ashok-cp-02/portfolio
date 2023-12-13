@@ -29,7 +29,7 @@ export default function Home(second) {
         <About />
         <Skills />
         {/* <Experiences /> */}
-        {/* <Project /> */}
+        <Project />
         <Education />
 
         {/* <Mint /> */}

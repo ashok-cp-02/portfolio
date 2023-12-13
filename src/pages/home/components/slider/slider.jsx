@@ -2,7 +2,7 @@
 //? React
 import { useState } from "react";
 //? Assets
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import { Player } from "@lottiefiles/react-lottie-player";
 import AboutLottie from "./img/slider1.json";
@@ -13,7 +13,7 @@ import Social from "../social";
 // CSS
 import "./slider.scss";
 // Images
-import SliderImg from "./img/slide.png";
+// import SliderImg from "./img/slide.png";
 
 //? JSON File
 
@@ -74,7 +74,7 @@ const Slider = () => {
                   Contact Me
                 </button>
                 <button onClick={handleDownload}>
-                  <GrDocumentDownload /> Resume
+                  <GrDocumentDownload /> Download CV
                 </button>
               </div>
               <Social />

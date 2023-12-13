@@ -136,7 +136,7 @@ const Header = (params) => {
             </Nav>
             <Nav>
               <a className="get-btn " onClick={handleDownload}>
-                <GrDocumentDownload /> Resume
+                <GrDocumentDownload /> Download CV
                 <span></span>
               </a>
             </Nav>

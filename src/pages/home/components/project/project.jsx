@@ -5,6 +5,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 //? Components
 
 //? CSS
@@ -32,6 +33,7 @@ const Project = () => {
                   And Various Other Libraries And Frameworks.
                 </p>
               </div>
+              <Link to="/project">Read More</Link>
             </Col>
             <Col xxl={12}></Col>
           </Row>
