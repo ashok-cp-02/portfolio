@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7aeb8758.css",
-    "main.js": "/portfolio/static/js/main.7f2da6d6.js",
+    "main.css": "/portfolio/static/css/main.560e9ef8.css",
+    "main.js": "/portfolio/static/js/main.dfbd58f1.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
-    "static/media/slide.png": "/portfolio/static/media/slide.1a8ba02f73e3f7a87348.png",
     "static/media/ASHOK-RESUME.pdf": "/portfolio/static/media/ASHOK-RESUME.662ea881cdd1ecf6f3bd.pdf",
+    "static/media/banner1.png": "/portfolio/static/media/banner1.eeb5b9b0ecb0f6c10ef9.png",
     "static/media/bg1.jpg": "/portfolio/static/media/bg1.db96fcb419daff0f494e.jpg",
+    "static/media/banner.png": "/portfolio/static/media/banner.1917e12f51ef2031c4bb.png",
     "static/media/ashok1.jpg": "/portfolio/static/media/ashok1.82fa2021bfb4b05443de.jpg",
     "static/media/fmb-logo-white.svg": "/portfolio/static/media/fmb-logo-white.32d52d577a22ae294d56c835e616da35.svg",
     "static/media/fmb-logo-dark.svg": "/portfolio/static/media/fmb-logo-dark.9f105b21957eafdf3eb8b1e1c28fb0d2.svg",
@@ -24,12 +25,12 @@
     "static/media/html5_icon.svg": "/portfolio/static/media/html5_icon.5e5e1b61b03a10f31a348d2688e3d567.svg",
     "static/media/gradient-circle.svg": "/portfolio/static/media/gradient-circle.e47cacd603d34459767d4f18f442fda6.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
-    "main.7aeb8758.css.map": "/portfolio/static/css/main.7aeb8758.css.map",
-    "main.7f2da6d6.js.map": "/portfolio/static/js/main.7f2da6d6.js.map",
+    "main.560e9ef8.css.map": "/portfolio/static/css/main.560e9ef8.css.map",
+    "main.dfbd58f1.js.map": "/portfolio/static/js/main.dfbd58f1.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7aeb8758.css",
-    "static/js/main.7f2da6d6.js"
+    "static/css/main.560e9ef8.css",
+    "static/js/main.dfbd58f1.js"
   ]
 }
