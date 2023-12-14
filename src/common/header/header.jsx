@@ -141,11 +141,11 @@ const Header = (params) => {
                 <span></span>
               </a>
             </Nav>
-            <Nav>
+            {/* <Nav>
               <span className="side-btn" onClick={ContacthandleShow}>
                 <BsFillGrid1X2Fill />
               </span>
-            </Nav>
+            </Nav> */}
           </Navbar.Collapse>
         </Container>
       </Navbar>
