@@ -28,12 +28,16 @@ const Project = () => {
               <div className="heading">
                 <h2 data-aos="fade-up">Project</h2>
                 <p data-aos="fade-up">
-                  As a front-end developer, I am proficient in various
-                  technologies Below <br />
-                  And Various Other Libraries And Frameworks.
+                  {/* Explore my front-end development prowess through a curated
+                  showcase of projects,
+                  <br /> highlighting innovative designs and seamless user
+                  experiences. <br /> */}
+                  Each project reflects my commitment to creating visually
+                  stunning and <br />
+                  functionally robust web applications.
                 </p>
               </div>
-              <Link to="/project">Read More</Link>
+              <Link to="/project">View All</Link>
             </Col>
             <Col xxl={12}></Col>
           </Row>

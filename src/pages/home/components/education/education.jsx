@@ -59,9 +59,8 @@ const Education = () => {
               <div className="heading">
                 <h2 data-aos="fade-up">Educational</h2>
                 <p data-aos="fade-up">
-                  As a front-end developer, I am proficient in various
-                  technologies Below <br />
-                  And Various Other Libraries And Frameworks.
+                  My academic journey has equipped me with the knowledge to
+                  <br /> excel in the role of Front end Developer
                 </p>
               </div>
             </Col>

@@ -33,14 +33,16 @@ const Project = () => {
     <>
       <section className="project-list-page">
         <Container>
-          <Row>
-            <Col xxl={12}>
+          <Row className="justify-content-center">
+            <Col xxl={8}>
               <div className="heading">
                 <h2>My Project</h2>
                 <p>
-                  As a front-end developer, I am proficient in various
-                  technologies Below <br />
-                  And Various Other Libraries And Frameworks.
+                  Explore my front-end development prowess through a curated
+                  showcase of projects, highlighting innovative designs and
+                  seamless user experiences. Each project reflects my commitment
+                  to creating visually stunning and functionally robust web
+                  applications.
                 </p>
               </div>
             </Col>
