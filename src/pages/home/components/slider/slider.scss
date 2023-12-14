@@ -3,7 +3,7 @@
   .slider {
     padding: 80px 0px;
     @include themed() {
-      background-color: t("themedark1");
+      background-color: t("transparentbg");
     }
     span.sub-title {
       color: #3c3e41;
@@ -206,10 +206,19 @@
       }
       .btn-grp button {
         font-size: 15px;
+        padding: 6px 15px;
       }
       ul {
         margin-bottom: 30px;
         gap: 20px;
+        li a {
+          &.git svg {
+            font-size: 19px;
+          }
+          svg {
+            font-size: 17px;
+          }
+        }
       }
     }
   }

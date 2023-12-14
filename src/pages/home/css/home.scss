@@ -14,7 +14,7 @@ main.ashok-portfolio {
   width: 100%;
   height: 100vh;
   mix-blend-mode: overlay;
-  // z-index: -1;
+  z-index: -1;
   img {
     position: fixed;
     -webkit-filter: blur(80px);

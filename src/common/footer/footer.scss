@@ -1,26 +1,31 @@
 @import "../assets/css/main.scss";
 
 footer {
-  z-index: 1;
-  position: relative;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 0px;
-  p {
-    margin: 0px;
-    text-align: center;
-    color: #fff;
-    font-family: $themefont;
-    font-size: 17px;
-    font-weight: 500;
-    svg {
-      color: $themecolor;
-    }
-    a {
-      text-decoration: none;
+  .hire-me {
+    padding: 50px 0px;
+  }
+
+  .copy-right {
+    position: relative;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    p {
+      margin: 0px;
+      text-align: center;
       color: #fff;
+      font-family: $themefont;
+      font-size: 17px;
+      font-weight: 500;
+      svg {
+        color: $themecolor;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
 }

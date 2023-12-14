@@ -4,7 +4,7 @@
     padding: 80px 0px;
     background-color: #f6f7fb;
     @include themed() {
-      background-color: t("themedark1");
+      background-color: t("transparentbg");
     }
     .heading {
       margin-bottom: 25px;
@@ -132,6 +132,36 @@
       }
       &:hover::before {
         width: 100%;
+      }
+      svg {
+        animation: shake-animation 2.5s ease infinite;
+        transform-origin: 50% 50%;
+        @keyframes shake-animation {
+          0% {
+            transform: translate(0, 0);
+          }
+          1.78571% {
+            transform: translate(3px, 0);
+          }
+          3.57143% {
+            transform: translate(0, 0);
+          }
+          5.35714% {
+            transform: translate(3px, 0);
+          }
+          7.14286% {
+            transform: translate(0, 0);
+          }
+          8.92857% {
+            transform: translate(3px, 0);
+          }
+          10.71429% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(0, 0);
+          }
+        }
       }
     }
     .icons-div {

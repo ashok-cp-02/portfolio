@@ -203,6 +203,16 @@ nav.main-header {
         }
       }
     }
+    span.side-btn {
+      cursor: pointer;
+      text-decoration: none;
+      margin: 0px 0px 0px 15px;
+      color: $themecolor;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      font-size: 28px;
+    }
   }
   .navbar-nav .nav-link.active,
   .navbar-nav .show > .nav-link {

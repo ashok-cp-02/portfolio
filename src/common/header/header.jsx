@@ -26,6 +26,7 @@ import LogoDark from "./img/fmb-logo-dark.svg";
 // Icons
 import { FaLaptopCode } from "react-icons/fa";
 import { GrDocumentDownload } from "react-icons/gr";
+import { BsFillGrid1X2Fill } from "react-icons/bs";
 
 // *******~ Import ~******** //
 
@@ -135,10 +136,15 @@ const Header = (params) => {
               <Nav.Link onClick={ContacthandleShow}>Contact</Nav.Link>
             </Nav>
             <Nav>
-              <a className="get-btn " onClick={handleDownload}>
+              <a className="get-btn" onClick={handleDownload}>
                 <GrDocumentDownload /> Download CV
                 <span></span>
               </a>
+            </Nav>
+            <Nav>
+              <span className="side-btn" onClick={ContacthandleShow}>
+                <BsFillGrid1X2Fill />
+              </span>
             </Nav>
           </Navbar.Collapse>
         </Container>
