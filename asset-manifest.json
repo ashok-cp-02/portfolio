@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c0fb9452.css",
-    "main.js": "/portfolio/static/js/main.89b2bcff.js",
+    "main.css": "/portfolio/static/css/main.71aee85a.css",
+    "main.js": "/portfolio/static/js/main.d127cedc.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/ASHOK-RESUME.pdf": "/portfolio/static/media/ASHOK-RESUME.5fab1aae8b1afdb9d6de.pdf",
     "static/media/banner1.png": "/portfolio/static/media/banner1.eeb5b9b0ecb0f6c10ef9.png",
@@ -25,12 +25,12 @@
     "static/media/html5_icon.svg": "/portfolio/static/media/html5_icon.5e5e1b61b03a10f31a348d2688e3d567.svg",
     "static/media/gradient-circle.svg": "/portfolio/static/media/gradient-circle.e47cacd603d34459767d4f18f442fda6.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
-    "main.c0fb9452.css.map": "/portfolio/static/css/main.c0fb9452.css.map",
-    "main.89b2bcff.js.map": "/portfolio/static/js/main.89b2bcff.js.map",
+    "main.71aee85a.css.map": "/portfolio/static/css/main.71aee85a.css.map",
+    "main.d127cedc.js.map": "/portfolio/static/js/main.d127cedc.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0fb9452.css",
-    "static/js/main.89b2bcff.js"
+    "static/css/main.71aee85a.css",
+    "static/js/main.d127cedc.js"
   ]
 }
