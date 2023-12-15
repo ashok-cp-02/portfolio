@@ -39,13 +39,20 @@ const Main = () => {
     <>
       <Router basename="/portfolio">
         {theme === "dark" && (
-          <div className="gradient-position">
-            {[...Array(2)].map((data, index) => (
-              <>
-                <img src={CircleImg} width="500" alt="Background Circle" />
-              </>
-            ))}
-          </div>
+          <>
+            <div className="gradient-position">
+              {[...Array(2)].map((data, index) => (
+                <>
+                  <img src={CircleImg} width="500" alt="Background Circle" />
+                </>
+              ))}
+            </div>
+            <div className="bg-color-blur">
+              <div className="blur-div d-one"></div>
+              <div className="blur-div d-two"></div>
+              <div className="blur-div d-three"></div>
+            </div>
+          </>
         )}
 
         <GoTop />

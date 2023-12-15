@@ -147,6 +147,7 @@ const Skills = () => {
   return (
     <>
       <span id="skills"></span>
+
       <section className="skills-section">
         <Container>
           <Row>

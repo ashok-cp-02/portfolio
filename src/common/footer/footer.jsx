@@ -6,12 +6,13 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 //? Components
 import Contact from "../../pages/contact/contact";
 //? CSS
 import "./footer.scss";
 //? Images
-
+import Photo from "./img/ashok1.jpg";
 //? JSON File
 
 //? Icons
@@ -31,6 +32,8 @@ const Footer = () => {
             <Row className="justify-content-center">
               <Col xxl={10} xl={8} md={11}>
                 <div className="hire-div">
+                  <div className="bg-color-div"></div>
+                  <Image src={Photo} fluid className="profile" />
                   <h2>
                     Let’s Work Together On Your
                     <br />

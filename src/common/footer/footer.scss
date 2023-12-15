@@ -5,15 +5,15 @@ footer {
     background-color: t("themedark1");
   }
   .hire-me {
-    padding: 50px 0px;
+    padding: 100px 0px 50px 0px;
     .hire-div {
       position: relative;
       border-radius: 10px;
-      padding: 50px;
+      padding: 70px 50px 50px 50px;
       background-image: url(./img/bg1.jpg);
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100%;
       box-shadow: rgba(0, 0, 0, 72%) 0px 0px 0px 2000px inset;
       h2 {
         margin: 0px;
@@ -76,7 +76,7 @@ footer {
           border-style: solid;
           border-width: 0.625rem 0.625rem 0 0;
           border-color: $themecolor transparent transparent transparent;
-          bottom: -10px;
+          bottom: -8px;
           content: "";
           left: 20px;
           position: absolute;
@@ -85,6 +85,68 @@ footer {
         }
         &:hover::after {
           border-color: #d92662 transparent transparent transparent;
+        }
+      }
+      .bg-color-div {
+        width: 130px;
+        height: 130px;
+        margin: -135px auto 0px auto;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 5px;
+        border-color: $themecolor;
+        border-style: inset;
+        animation: rotatebg 3s linear infinite;
+      }
+      @keyframes rotatebg {
+        0% {
+          -webkit-transform: rotate3d(0, 0, 1, 0deg);
+          transform: rotate3d(0, 0, 1, 0deg);
+        }
+        50% {
+          -webkit-transform: rotate3d(0, 0, 1, 180deg);
+          transform: rotate3d(0, 0, 1, 180deg);
+        }
+        100% {
+          -webkit-transform: rotate3d(0, 0, 1, 360deg);
+          transform: rotate3d(0, 0, 1, 360deg);
+        }
+      }
+
+      img.profile {
+        $size: 120px;
+        width: $size;
+        height: $size;
+        object-fit: cover;
+        border-radius: 50%;
+        object-position: top;
+        box-shadow: rgb(0 0 0 / 48%) 0px 0px 10px;
+        border: 3px solid #fff;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -60px);
+        -webkit-animation: imgani 2s infinite;
+        animation: imgani 2s infinite;
+        @keyframes imgani {
+          0% {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+          }
+          30% {
+            -webkit-filter: grayscale(0.5);
+            filter: grayscale(0.5);
+          }
+          60% {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+          }
+
+          100% {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+          }
         }
       }
     }
@@ -117,9 +179,13 @@ footer {
 
 @media only screen and (min-width: 320px) and (max-width: 420px) {
   footer .hire-me .hire-div {
-    padding: 50px 25px;
+    padding: 70px 25px 50px 25px;
+    background-size: cover;
     h2 {
       font-size: 23px;
+      br {
+        display: none;
+      }
     }
     button {
       font-size: 15px;
@@ -128,7 +194,7 @@ footer {
 }
 @media only screen and (min-width: 421px) and (max-width: 991px) {
   footer .hire-me .hire-div {
-    padding: 50px 25px;
+    padding: 70px 25px 50px 25px;
     h2 {
       font-size: 25px;
     }
@@ -139,7 +205,7 @@ footer {
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   footer .hire-me .hire-div {
-    padding: 50px 25px;
+    padding: 70px 25px 50px 25px;
     h2 {
       font-size: 25px;
     }
