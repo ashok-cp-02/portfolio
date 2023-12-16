@@ -24,17 +24,12 @@ import { TbProgressBolt } from "react-icons/tb";
 // *******~ Import ~******** //
 
 const Project = () => {
-  const statusMap = {
-    0: "Inprogress",
-    1: "Completed",
-    2: "Hold",
-  };
   return (
     <>
       <section className="project-list-page">
         <Container>
           <Row className="justify-content-center">
-            <Col xxl={8}>
+            <Col xxl={8} xl={8}>
               <div className="heading">
                 <h2>My Project</h2>
                 <p>
@@ -46,72 +41,8 @@ const Project = () => {
                 </p>
               </div>
             </Col>
-            {ProjectData.map((projectlist, index) => (
-              <>
-                <Col xxl={6}>
-                  <div className="project-box" key={index}>
-                    <div className="img-div">
-                      <Image src={projectlist.banner} fluid />
-                      {/* <div className="overlay-shadow"></div> */}
-                      <span>{projectlist.type}</span>
-                    </div>
-                    <div className="content">
-                      <h1>{projectlist.title}</h1>
-                      <p className="desc">{projectlist.disc}</p>
-                      <ul>
-                        {projectlist.tech.map((tec, index) => (
-                          <>
-                            <li key={index}>
-                              <Image src={tec} fluid />
-                            </li>
-                          </>
-                        ))}
-                      </ul>
-                      <div className="duration">
-                        <p className="time">
-                          <span>Duration:</span> {projectlist.date.startdate} to{" "}
-                          {projectlist.date.enddate.length === 0
-                            ? "Present"
-                            : projectlist.date.enddate}
-                        </p>
-                        <p
-                          className={`status ${statusMap[
-                            projectlist.status
-                          ]?.toLowerCase()}`}
-                        >
-                          {projectlist.status === 0 ? (
-                            <TbProgressBolt />
-                          ) : projectlist.status === 1 ? (
-                            <MdDone />
-                          ) : (
-                            projectlist.status === 2 && <PiPlaceholderBold />
-                          )}
-                          {statusMap[projectlist.status] || "Unknown Status"}
-                        </p>
-                      </div>
 
-                      <div className="footer-div">
-                        <a
-                          className="live-demo"
-                          href={projectlist.liveurl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title={projectlist.liveurl}
-                        >
-                          <TbWorld /> Live Demo
-                        </a>
-                        <Link
-                          className="readmore-btn"
-                          to={`/project/${projectlist.path}`}
-                        >
-                          More Details <IoIosArrowDropright />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-              </>
-            ))}
+            <Listing />
           </Row>
         </Container>
       </section>
@@ -119,3 +50,81 @@ const Project = () => {
   );
 };
 export default Project;
+
+export function Listing() {
+  const statusMap = {
+    0: "Inprogress",
+    1: "Completed",
+    2: "Hold",
+  };
+  return (
+    <>
+      {ProjectData.map((projectlist, index) => (
+        <>
+          <Col xxl={6} xl={6}>
+            <div className="project-box" key={index}>
+              <div className="img-div">
+                <Image src={projectlist.banner} fluid />
+                {/* <div className="overlay-shadow"></div> */}
+                <span>{projectlist.type}</span>
+              </div>
+              <div className="content">
+                <h1>{projectlist.title}</h1>
+                <p className="desc">{projectlist.disc}</p>
+                <ul>
+                  {projectlist.tech.map((tec, index) => (
+                    <>
+                      <li key={index}>
+                        <Image src={tec} fluid />
+                      </li>
+                    </>
+                  ))}
+                </ul>
+                <div className="duration">
+                  <p className="time">
+                    <span>Duration:</span> {projectlist.date.startdate} to{" "}
+                    {projectlist.date.enddate.length === 0
+                      ? "Present"
+                      : projectlist.date.enddate}
+                  </p>
+                  <p
+                    className={`status ${statusMap[
+                      projectlist.status
+                    ]?.toLowerCase()}`}
+                  >
+                    {projectlist.status === 0 ? (
+                      <TbProgressBolt />
+                    ) : projectlist.status === 1 ? (
+                      <MdDone />
+                    ) : (
+                      projectlist.status === 2 && <PiPlaceholderBold />
+                    )}
+                    {statusMap[projectlist.status] || "Unknown Status"}
+                  </p>
+                </div>
+
+                <div className="footer-div">
+                  <a
+                    className="live-demo"
+                    href={projectlist.liveurl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={projectlist.liveurl}
+                  >
+                    <TbWorld /> Live Demo
+                  </a>
+                  <Link
+                    className="readmore-btn"
+                    to={`/project/${projectlist.path}`}
+                  >
+                    More Details <IoIosArrowDropright />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </>
+      ))}
+    </>
+  );
+}

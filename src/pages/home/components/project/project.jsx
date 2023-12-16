@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 //? Components
-
+import { Listing } from "../../../project/project";
 //? CSS
 import "./project.scss";
 //? Images
@@ -16,6 +16,8 @@ import PhonePanel from "./img/phone-mokup.png";
 // import MobScreen from "./img/mob-screen.jpeg";
 
 import MobScreen from "./img/Screenshot_20231216-151334.png";
+import MobScreen1 from "./img/mob-sc.png";
+
 //? JSON File
 
 //? Icons
@@ -40,16 +42,22 @@ const Project = () => {
                   functionally robust web applications.
                 </p>
               </div>
-              <Link to="/project">View All</Link>
             </Col>
-            <Col xxl={4}></Col>
-            <Col xxl={4} xl={3}>
+
+            {/* <Col xxl={4} xl={3}>
               <div className="mobile-view">
-                {/* <Image src={PhonePanel} fluid className="mob-panel-img" /> */}
+                <Image src={PhonePanel} fluid className="mob-panel-img" />
                 <Image src={PhonePanel} fluid className="mob-panel-img" />
                 <Image src={MobScreen} fluid className="mob-screen-img" />
+                <Image src={MobScreen1} fluid className="" />
               </div>
-            </Col>
+            </Col> */}
+          </Row>
+          <Row>
+            <Listing />
+            <Link to="/project" className="view-all">
+              View All
+            </Link>
           </Row>
         </Container>
       </section>

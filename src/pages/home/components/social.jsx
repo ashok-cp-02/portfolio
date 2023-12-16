@@ -10,7 +10,6 @@ import React from "react";
 //? Images
 
 //? JSON File
-
 //? Icons
 // import { GrDocumentUser } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa6";

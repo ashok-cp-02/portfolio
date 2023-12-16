@@ -39,10 +39,10 @@ const ProjectData = [
     banner: FMBBanner,
     type: "React Website",
     liveurl: "https://fusionmybusiness.com/",
-    status: 0,
+    status: 1,
     date: {
       startdate: "Mar 2023",
-      enddate: "",
+      enddate: "July 2023",
     },
     tech: [Reacticon, HTMLicon, CSSicon, SASSicon],
   },
