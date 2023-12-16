@@ -14,6 +14,7 @@ import "./project.scss";
 //? Images
 import PhonePanel from "./img/phone-mokup.png";
 // import MobScreen from "./img/mob-screen.jpeg";
+
 import MobScreen from "./img/Screenshot_20231216-151334.png";
 //? JSON File
 
