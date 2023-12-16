@@ -30,7 +30,7 @@ const Footer = () => {
         <section className="hire-me">
           <Container>
             <Row className="justify-content-center">
-              <Col xxl={10} xl={8} md={11}>
+              <Col xxl={10} xl={9} md={11}>
                 <div className="hire-div">
                   <div className="bg-color-div"></div>
                   <Image src={Photo} fluid className="profile" />

@@ -47,6 +47,20 @@
       margin: 0px auto;
       padding: 8px 20px;
     }
+    .mobile-view {
+      position: relative;
+      img.mob-panel-img {
+        position: absolute;
+      }
+      img.mob-screen-img {
+        width: 100%;
+        border-radius: 50px;
+        padding: 5px;
+        height: 450px;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
   }
 }
 
