@@ -24,6 +24,7 @@ import { TbProgressBolt } from "react-icons/tb";
 // *******~ Import ~******** //
 
 const Project = () => {
+  const limitedProjectData = ProjectData;
   return (
     <>
       <section className="project-list-page">
@@ -41,8 +42,9 @@ const Project = () => {
                 </p>
               </div>
             </Col>
-
-            <Listing />
+          </Row>
+          <Row>
+            <Listing ProjectData={limitedProjectData} />
           </Row>
         </Container>
       </section>
@@ -51,12 +53,13 @@ const Project = () => {
 };
 export default Project;
 
-export function Listing() {
+export function Listing({ ProjectData }) {
   const statusMap = {
     0: "Inprogress",
     1: "Completed",
     2: "Hold",
   };
+
   return (
     <>
       {ProjectData.map((projectlist, index) => (

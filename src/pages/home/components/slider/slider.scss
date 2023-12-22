@@ -1,7 +1,7 @@
 @import "../../../../common/assets/css/main.scss";
 .home-page {
   .slider {
-    padding: 50px 0px;
+    padding: 60px 0px 60px 0px;
     @include themed() {
       background-color: t("transparentbg");
     }

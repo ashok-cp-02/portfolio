@@ -9,6 +9,7 @@ import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 //? Components
 import { Listing } from "../../../project/project";
+import ProjectData from "../../../project/projectdata";
 //? CSS
 import "./project.scss";
 //? Images
@@ -24,6 +25,7 @@ import MobScreen1 from "./img/mob-sc.png";
 // *******~ Import ~******** //
 
 const Project = () => {
+  const limitedProjectData = ProjectData.slice(0, 2);
   return (
     <>
       <section className="project-section" id="project">
@@ -54,7 +56,7 @@ const Project = () => {
             </Col> */}
           </Row>
           <Row>
-            <Listing />
+            <Listing ProjectData={limitedProjectData} />
             <Link to="/project" className="view-all">
               View All
             </Link>

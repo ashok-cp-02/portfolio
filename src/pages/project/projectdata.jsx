@@ -1,5 +1,7 @@
-import FKBanner from "./img/fk/banner1.png";
+import FKBanner from "./img/fk/ban1.png";
 import FMBBanner from "./img/fmb/banner.png";
+import FIBanner from "./img/fi/banner.png";
+import FPOSBanner from "./img/fpos/banner.png";
 // skill
 import HTMLicon from "./img/skills/html5_icon.svg";
 import CSSicon from "./img/skills/css_icon.svg";
@@ -18,7 +20,7 @@ import VSCodeicon from "./img/skills/vscode.svg";
 const ProjectData = [
   {
     by: "Ashok",
-    path: "Project-a",
+    path: "project-fk",
     title: "Fusion Kitchen",
     disc: "This app enables users to easily order food by searching for nearby restaurants using their postal code. You can choose between options for either picking up your order or having it delivered to your location.",
     banner: FKBanner,
@@ -33,12 +35,42 @@ const ProjectData = [
   },
   {
     by: "Ashok",
-    path: "Project-b",
+    path: "project-fmb",
     title: "Fusion My Business",
     disc: "This app enables users to easily order food by searching for nearby restaurants using their postal code. You can choose between options for either picking up your order or having it delivered to your location.",
     banner: FMBBanner,
     type: "React Website",
     liveurl: "https://fusionmybusiness.com/",
+    status: 1,
+    date: {
+      startdate: "Mar 2023",
+      enddate: "July 2023",
+    },
+    tech: [Reacticon, HTMLicon, CSSicon, SASSicon],
+  },
+  {
+    by: "Ashok",
+    path: "project-fi",
+    title: "Fusion Innovative",
+    disc: "This app enables users to easily order food by searching for nearby restaurants using their postal code. You can choose between options for either picking up your order or having it delivered to your location.",
+    banner: FIBanner,
+    type: "React Website",
+    liveurl: "https://fusioninnovative.com/",
+    status: 1,
+    date: {
+      startdate: "Mar 2023",
+      enddate: "July 2023",
+    },
+    tech: [Reacticon, HTMLicon, CSSicon, SASSicon],
+  },
+  {
+    by: "Ashok",
+    path: "project-fpos",
+    title: "Fusion Innovative",
+    disc: "This app enables users to easily order food by searching for nearby restaurants using their postal code. You can choose between options for either picking up your order or having it delivered to your location.",
+    banner: FPOSBanner,
+    type: "React Website",
+    liveurl: "https://www.fusionpos.co.uk/",
     status: 1,
     date: {
       startdate: "Mar 2023",
