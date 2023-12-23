@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.78fbc6f6.css",
-    "main.js": "/portfolio/static/js/main.f19a9def.js",
+    "main.css": "/portfolio/static/css/main.b6163040.css",
+    "main.js": "/portfolio/static/js/main.ee35be3b.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/takeaway1.png": "/portfolio/static/media/takeaway1.6c163a38e2b4232a8f99.png",
     "static/media/restaurant3.png": "/portfolio/static/media/restaurant3.8bb5095bfb8ab79d2fcf.png",
@@ -32,12 +32,12 @@
     "static/media/html5_icon.svg": "/portfolio/static/media/html5_icon.5e5e1b61b03a10f31a348d2688e3d567.svg",
     "static/media/gradient-circle.svg": "/portfolio/static/media/gradient-circle.e47cacd603d34459767d4f18f442fda6.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
-    "main.78fbc6f6.css.map": "/portfolio/static/css/main.78fbc6f6.css.map",
-    "main.f19a9def.js.map": "/portfolio/static/js/main.f19a9def.js.map",
+    "main.b6163040.css.map": "/portfolio/static/css/main.b6163040.css.map",
+    "main.ee35be3b.js.map": "/portfolio/static/js/main.ee35be3b.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78fbc6f6.css",
-    "static/js/main.f19a9def.js"
+    "static/css/main.b6163040.css",
+    "static/js/main.ee35be3b.js"
   ]
 }
