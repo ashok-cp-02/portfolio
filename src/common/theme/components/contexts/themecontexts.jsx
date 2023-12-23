@@ -1,9 +1,11 @@
 import React from "react";
 
 export const initialThemeState = {
-  theme: window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light",
+  theme:
+    sessionStorage.getItem("theme") ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light"),
   setTheme: () => null,
 };
 

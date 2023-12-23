@@ -2,6 +2,9 @@
 
 .project-list-page {
   padding: 50px 0px;
+  .row {
+    gap: 25px 0px;
+  }
   // background-color: #f6f7fb;
   .heading {
     margin-bottom: 50px;
@@ -33,33 +36,22 @@
 
 .project-box {
   background-color: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   @include themed() {
     background-color: t("skillbg");
     box-shadow: t("skillshadow");
   }
   .img-div {
     position: relative;
-    padding: 10px;
-    &:hover {
-      img {
-        object-position: bottom center;
-        -webkit-transition: all 5s ease;
-        -moz-transition: all 5s ease;
-        -o-transition: all 5s ease;
-        -ms-transition: all 5s ease;
-        transition: all 5s ease;
-      }
-    }
+    padding: 0px;
+    display: block;
+    overflow: hidden;
 
     img {
       border-radius: 10px 10px 0px 0px;
-      height: 325px;
-      width: 100%;
-      object-fit: cover;
-      object-position: top center;
       -webkit-transition: all 1s ease;
       -moz-transition: all 1s ease;
       -o-transition: all 1s ease;
@@ -81,11 +73,31 @@
       font-family: $themefont;
       font-weight: 500;
       font-size: 14px;
-      border-radius: 50px;
+      border-radius: 0px 20px 0px 0px;
       color: #fff;
       position: absolute;
-      bottom: 20px;
-      left: 20px;
+      bottom: 51px;
+      left: 0px;
+    }
+    .content-data {
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      background-color: rgb(255 255 255 / 72%);
+
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      h1 {
+        color: #0d0621;
+        font-family: $themefont;
+        font-weight: 600;
+        font-size: 26px;
+        margin: 0px;
+      }
     }
   }
   .content {
@@ -124,6 +136,8 @@
       li {
         img {
           width: 30px;
+          height: 30px;
+          object-fit: contain;
         }
       }
     }
@@ -188,21 +202,208 @@
         align-items: center;
         justify-content: center;
         gap: 5px;
+        padding: 6px 20px;
         &.live-demo {
           color: #fff;
           background-color: #000;
-          padding: 8px 20px;
+
+          border: 1px solid #000;
+          &:hover {
+            color: #000;
+            background-color: transparent;
+            @include themed() {
+              border-color: t("whitecolor");
+              color: t("whitecolor");
+            }
+          }
         }
         &.readmore-btn {
           color: #fff;
           background-color: $themecolor;
           width: 175px;
           margin: 0px;
-          padding: 8px 20px;
+
+          border: 1px solid $themecolor;
+          &:hover {
+            color: $themecolor;
+            background-color: transparent;
+            @include themed() {
+              border-color: t("whitecolor");
+              color: t("whitecolor");
+            }
+          }
         }
         svg {
           font-size: 20px;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .project-box {
+    margin: 0px 0px;
+    .img-div {
+      span {
+        bottom: 35px;
+        font-size: 13px;
+      }
+      .content-data {
+        padding: 6px 10px;
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+    .content {
+      padding: 10px;
+      gap: 10px;
+      p.desc {
+        font-size: 15px;
+      }
+      ul {
+        gap: 10px;
+        li img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .duration {
+        flex-wrap: wrap;
+        gap: 10px;
+        p {
+          &.time {
+            font-size: 14.5px;
+          }
+          &.status {
+            font-size: 13px;
+            padding: 0px 6px;
+          }
+        }
+      }
+      .footer-div {
+        flex-direction: column;
+        gap: 10px;
+        a {
+          font-size: 15px;
+          &.readmore-btn {
+            width: 155px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .project-box {
+    .img-div {
+      span {
+        bottom: 36px;
+        font-size: 13px;
+      }
+      .content-data {
+        padding: 5px 12px;
+        h1 {
+          font-size: 22px;
+        }
+      }
+    }
+    .content {
+      padding: 12px;
+      p.desc {
+        font-size: 16px;
+      }
+      ul li img {
+        width: 27px;
+        height: 27px;
+      }
+      .duration p.time {
+        font-size: 15px;
+      }
+      .footer-div a {
+        font-size: 15px;
+        padding: 5px 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .project-box {
+    .img-div {
+      span {
+        bottom: 41px;
+        font-size: 13px;
+      }
+      .content-data {
+        padding: 6px 12px;
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+    .content {
+      padding: 12px;
+      p.desc {
+        font-size: 16px;
+      }
+      ul li img {
+        width: 28px;
+        height: 28px;
+      }
+      .duration p.time {
+        font-size: 15.5px;
+      }
+      .footer-div a {
+        font-size: 15.5px;
+        padding: 5px 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .project-list-page {
+    .heading {
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 15px;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 991px) {
+  .project-list-page {
+    .heading {
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .project-list-page {
+    .heading {
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 17px;
       }
     }
   }

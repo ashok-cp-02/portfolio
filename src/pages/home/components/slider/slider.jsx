@@ -88,6 +88,7 @@ const Slider = () => {
           </Row>
         </Container>
       </section>
+
       <Contact Contactshow={Contactshow} setContactshow={setContactshow} />
     </>
   );

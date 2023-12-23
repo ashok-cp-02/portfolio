@@ -30,23 +30,71 @@
         }
       }
     }
+    .swiper.project-swiper {
+      padding-bottom: 50px;
+      .swiper-pagination {
+        .swiper-pagination-bullet {
+          @include themed() {
+            background: t("whitecolor");
+          }
+          &.swiper-pagination-bullet-active {
+            background-color: $themecolor;
+          }
+        }
+      }
+    }
     a.view-all {
-      text-decoration: none;
-      font-family: $themefont;
-      font-weight: 400;
-      font-size: 16px;
-      border-radius: 50px;
-      line-height: normal;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      vertical-align: middle;
       display: flex;
-      flex-direction: row;
       align-items: center;
-      justify-content: center;
       gap: 5px;
-      color: #fff;
+      border: none;
+      text-transform: capitalize;
+      text-align: center;
       background-color: $themecolor;
-      width: 175px;
-      margin: 50px auto 0px auto;
-      padding: 8px 20px;
+      color: #fff;
+      font-family: $themefont;
+      padding: 6px 45px;
+      line-height: inherit;
+      border-radius: 10px;
+      -webkit-transition: background-color 0.25s linear, color 0.4s ease-in-out;
+      transition: background-color 0.25s linear, color 0.4s ease-in-out;
+      text-decoration: none;
+      overflow: hidden;
+      font-size: 17px;
+      width: fit-content;
+      margin: 25px auto 0px auto;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        background-color: #000;
+        z-index: -1;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        border-radius: inherit;
+        @include themed() {
+          background-color: t("whitecolor");
+        }
+      }
+      &:hover {
+        color: #fff;
+        background-color: #000;
+        @include themed() {
+          background-color: t("whitecolor");
+          color: t("blackcolor");
+        }
+      }
+      &:hover::before {
+        width: 100%;
+      }
     }
     .mobile-view {
       position: relative;
@@ -94,6 +142,11 @@
         br {
           display: none;
         }
+      }
+    }
+    .swiper.project-swiper {
+      .project-box {
+        margin: 0px 10px;
       }
     }
   }

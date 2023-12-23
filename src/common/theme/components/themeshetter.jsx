@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 
 import "./themebtn.scss";
 import ThemeContext from "./contexts/themecontexts";
@@ -11,19 +11,22 @@ import { WiMoonAltWaningCrescent3 } from "react-icons/wi";
 export default function ThemeSetter() {
   const { theme, setTheme } = useContext(ThemeContext);
   const [checked, setChecked] = useState(theme === "light");
+  useEffect(() => {
+    // Set the theme in session storage whenever it changes
+    sessionStorage.setItem("theme", theme);
+  }, [theme]);
 
-  checked ? setTheme("light") : setTheme("dark");
+  const toggle = () => {
+    setChecked((prevChecked) => !prevChecked);
+    setTheme(checked ? "dark" : "light");
+  };
 
   return (
     <>
       <div className="theme-btn">
         <div className="checkbox-wrapper-54">
           <label className="switch">
-            <input
-              type="checkbox"
-              checked={checked}
-              onChange={() => setChecked(toggle)}
-            />
+            <input type="checkbox" checked={checked} onChange={toggle} />
             <span className="slider">
               {checked ? (
                 <>
@@ -40,7 +43,4 @@ export default function ThemeSetter() {
       </div>
     </>
   );
-}
-function toggle(value) {
-  return !value;
 }

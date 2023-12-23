@@ -11,10 +11,12 @@ import GoTop from "./common/gototop/gototop";
 import ScrollToTop from "./common/scrolltop/scrolltop";
 import Header from "./common/header/header";
 import Footer from "./common/footer/footer";
+import ColorSwitch from "./common/color-switch/color-switch";
 //? CSS
 
 //? Images
 import CircleImg from "./common/assets/img/gradient-circle.svg";
+
 //? JSON File
 
 //? Icons
@@ -47,16 +49,16 @@ const Main = () => {
                 </>
               ))}
             </div>
-            <div className="bg-color-blur">
-              <div className="blur-div d-one"></div>
-              <div className="blur-div d-two"></div>
-              <div className="blur-div d-three"></div>
-            </div>
           </>
         )}
-
+        <div className="bg-color-blur">
+          <div className="blur-div d-one"></div>
+          <div className="blur-div d-two"></div>
+          <div className="blur-div d-three"></div>
+        </div>
         <GoTop />
         <ScrollToTop />
+        <ColorSwitch />
         <Header />
         <main className="ashok-portfolio">
           <Routing />

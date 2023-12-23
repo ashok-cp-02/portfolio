@@ -1,0 +1,73 @@
+@import "../../common/assets/css/main.scss";
+.project-details {
+  .image-div {
+    position: relative;
+    margin-top: 15px;
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 0px;
+    }
+    width: 100%;
+    padding: 0px;
+    .overlay {
+      border-radius: 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: rgb(0 0 0 / 70%) 0px 0px 0px 2000px inset;
+    }
+    .heading-content {
+      color: #fff;
+      z-index: 1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      h5 {
+        text-align: center;
+        font-family: $themefont;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      p {
+        text-align: center;
+        font-family: $themefont;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: $themecolor;
+        }
+      }
+    }
+  }
+  .under-text {
+    font-family: $themefont;
+    font-size: 40px;
+    font-weight: 700;
+    color: $themecolor;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .project-details .image-div .heading-content {
+    h5 {
+      font-size: 32px;
+    }
+  }
+  .project-details .under-text {
+    font-size: 32px;
+  }
+}
