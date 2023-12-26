@@ -7,6 +7,9 @@ footer {
   .hire-me {
     padding: 100px 0px 50px 0px;
     background-color: #f6f7fb;
+    @include themed() {
+      background-color: t("themedark1");
+    }
     .hire-div {
       position: relative;
       border-radius: 10px;
@@ -183,7 +186,7 @@ footer {
     padding: 70px 25px 50px 25px;
     background-size: cover;
     h2 {
-      font-size: 23px;
+      font-size: 21px;
       br {
         display: none;
       }
@@ -197,7 +200,7 @@ footer {
   footer .hire-me .hire-div {
     padding: 70px 25px 50px 25px;
     h2 {
-      font-size: 25px;
+      font-size: 23px;
     }
     button {
       font-size: 15px;

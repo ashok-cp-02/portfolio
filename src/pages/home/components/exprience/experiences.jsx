@@ -16,7 +16,7 @@ import "./experiences.scss";
 //? JSON File
 
 //? Icons
-import { MdWorkHistory } from "react-icons/md";
+// import { MdWorkHistory } from "react-icons/md";
 import { IoMdArrowDropright } from "react-icons/io";
 // *******~ Import ~******** //
 
@@ -50,7 +50,7 @@ const Experiences = () => {
       ],
     },
     {
-      Role: "Front End Developer",
+      Role: "Sr. UI Developer",
       OrgName: "Fusion Innovative Limited., Chennai",
       OrgSubName: "( A unit of Hardee Software Solution PVT LTD )",
       Duration: "- Mar 2022 to Nov 2023",
