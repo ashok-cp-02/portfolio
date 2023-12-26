@@ -23,7 +23,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Mousewheel } from "swiper/modules";
 // *******~ Import ~******** //
 
 const Project = () => {
@@ -34,7 +34,7 @@ const Project = () => {
           <Row>
             <Col xxl={12}>
               <div className="heading">
-                <h2 data-aos="fade-up">Project</h2>
+                <h2 data-aos="fade-up">Latest Project</h2>
                 <p data-aos="fade-up">
                   Each project reflects my commitment to creating visually
                   stunning and <br />
@@ -50,7 +50,7 @@ const Project = () => {
                   dynamicBullets: true,
                   clickable: true,
                 }}
-                modules={[Pagination, Autoplay]}
+                modules={[Pagination, Autoplay, Mousewheel]}
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: true,
@@ -59,7 +59,8 @@ const Project = () => {
                 slidesPerView={1}
                 spaceBetween={25}
                 centeredSlides={false}
-                loop
+                loop={true}
+                mousewheel={true}
                 className="project-swiper"
                 breakpoints={{
                   0: {

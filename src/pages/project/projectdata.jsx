@@ -197,7 +197,7 @@ const ProjectData = [
     status: 1,
     date: {
       startdate: "-",
-      enddate: "-",
+      enddate: "Oct 2021",
     },
     tech: [HTMLicon, CSSicon, JSicon, Booticon, Jqueryicon],
   },

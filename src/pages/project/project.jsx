@@ -37,7 +37,7 @@ const Project = () => {
           <Row className="justify-content-center">
             <Col xxl={8} xl={8} lg={10}>
               <div className="heading">
-                <h2>My Project</h2>
+                <h2>Latest Project</h2>
                 <p>
                   Explore my front-end development prowess through a curated
                   showcase of projects, highlighting innovative designs and

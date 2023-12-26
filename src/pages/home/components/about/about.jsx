@@ -40,7 +40,7 @@ const About = () => {
         <Container>
           <Row className="align-items-center justify-content-center">
             <Col xxl={5} md={8} lg={5}>
-              <div className="lottie-ani">
+              <div className="lottie-ani" data-aos="fade-up">
                 <Player autoplay loop src={AboutLottie}></Player>
               </div>
             </Col>

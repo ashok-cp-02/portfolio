@@ -1,12 +1,12 @@
 // *******~ Import ~******** //
 //? React
-import React from "react";
+import { useState } from "react";
 //? Assets
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Tab from "react-bootstrap/Tab";
-import Nav from "react-bootstrap/Nav";
+import Tabs from "react-bootstrap/Tabs";
 //? Components
 
 //? CSS
@@ -16,9 +16,57 @@ import "./experiences.scss";
 //? JSON File
 
 //? Icons
+import { MdWorkHistory } from "react-icons/md";
+import { IoMdArrowDropright } from "react-icons/io";
 // *******~ Import ~******** //
 
 const Experiences = () => {
+  const [key, setKey] = useState("exp3");
+  const ExpLists = [
+    {
+      Role: "Jr. UI Developer",
+      OrgName: "RSN Infotech PVT LTD., Dharmapuri",
+      Duration: "- Aug 2018 to Nov 2019",
+      Url: {
+        Path: "https://www.rsninfotech.com/",
+        Name: "- www.rsninfotech.com",
+      },
+      Responsibilitys: [
+        "Developing highly interactive front-end user interfaces for web applications with a responsive layout using HTML, CSS, JavaScript, Bootstrap and various other libraries and frameworks.",
+        "Ensured cross-browser compatibility and responsiveness using media queries and flexbox layouts.",
+      ],
+    },
+    {
+      Role: "Jr. UI Developer",
+      OrgName: "Neowep Software Solution., Dharmapuri",
+      Duration: "- Dec 2019 to Jan 2022",
+      Url: {
+        Path: "http://www.neowep.com/",
+        Name: "- www.neowep.com",
+      },
+      Responsibilitys: [
+        "Developing highly interactive front-end user interfaces for web applications with a responsive layout using HTML, CSS, JavaScript, React Js, Sass, Bootstrap and various other libraries and frameworks.",
+        "Ensured cross-browser compatibility and responsiveness using media queries and flexbox layouts.",
+      ],
+    },
+    {
+      Role: "Front End Developer",
+      OrgName: "Fusion Innovative Limited., Chennai",
+      OrgSubName: "( A unit of Hardee Software Solution PVT LTD )",
+      Duration: "- Mar 2022 to Nov 2023",
+      Url: {
+        Path: "https://www.fusioninnovative.com/",
+        Name: "- www.fusioninnovative.com",
+      },
+      Responsibilitys: [
+        "Developing highly interactive single page applications and build the reusable components using React js, React Bootstrap, Material UI and various other libraries and frameworks.",
+        "Solid understanding of async request handling, props, and hooks.",
+        "Possess a keen eye for detail and have the ability to translate wireframes and design concepts into pixel-perfect creations.",
+        "Ensured cross-browser compatibility and responsiveness using media queries and flexbox/grid layouts.",
+        "Managed codebase efficiently using Git and GitHub for version control.",
+      ],
+    },
+  ];
   return (
     <>
       <span id="experiences"></span>
@@ -27,40 +75,73 @@ const Experiences = () => {
           <Row>
             <Col xxl={12}>
               <div className="heading">
-                <h2 data-aos="fade-up">Work Experiences</h2>
+                <h2 data-aos="fade-up">Professional Experience</h2>
                 <p data-aos="fade-up">
-                  As a front-end developer, I am proficient in various
-                  technologies Below <br />
-                  And Various Other Libraries And Frameworks.
+                  Experienced Front-End Developer proficient in crafting
+                  responsive and <br /> visually appealing web interfaces.
                 </p>
               </div>
             </Col>
-            <Col xxl={12}>
-              <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                <Row className="justify-content-center">
-                  <Col sm={3}>
-                    <Nav variant="pills" className="flex-column">
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">
-                          Work Experience (2018 to 2019):
-                        </Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
-                  </Col>
-                  <Col sm={6}>
-                    <Tab.Content>
-                      <Tab.Pane eventKey="first">
-                        Fusion Innovative Limited (Hardee Software Solutions PVT
-                        LTD).,Chennai.
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="second">Second tab content</Tab.Pane>
-                    </Tab.Content>
-                  </Col>
-                </Row>
-              </Tab.Container>
+          </Row>
+          <Row className="justify-content-center">
+            <Col xxl={8} md={10} lg={10}>
+              <div className="experience-tab-div">
+                <Tabs
+                  id="experience-tab"
+                  activeKey={key}
+                  onSelect={(k) => setKey(k)}
+                >
+                  {ExpLists.map((explist, index) => (
+                    <Tab
+                      key={`exp${index + 1}`}
+                      eventKey={`exp${index + 1}`}
+                      title={`${index + 1}`}
+                    >
+                      <div className="experience-content" data-aos="flip-up">
+                        <div className="header-div">
+                          <div className="title-div">
+                            <h3>{explist.Role}</h3>
+                            <p>{explist.Duration}</p>
+                          </div>
+                          <div className="org-name">
+                            <div className="org">
+                              <h3>{explist.OrgName}</h3>
+                              {explist.OrgSubName && (
+                                <span>{explist.OrgSubName}</span>
+                              )}
+                            </div>
+
+                            <a
+                              className="stack"
+                              href={explist.Url.Path}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {explist.Url.Name}
+                            </a>
+                          </div>
+                        </div>
+                        <div className="roles-respons">
+                          <h3>Roles and Responsibilities:</h3>
+
+                          <ul>
+                            {explist.Responsibilitys.map(
+                              (Responsibility, index) => (
+                                <>
+                                  <li key={index}>
+                                    <IoMdArrowDropright />
+                                    <p>{Responsibility}</p>
+                                  </li>
+                                </>
+                              )
+                            )}
+                          </ul>
+                        </div>
+                      </div>
+                    </Tab>
+                  ))}
+                </Tabs>
+              </div>
             </Col>
           </Row>
         </Container>

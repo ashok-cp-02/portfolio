@@ -27,12 +27,10 @@ export default function Home(second) {
       <section className="home-page">
         <Slider />
         <About />
-        <Skills />
-        {/* <Experiences /> */}
+        <Experiences />
         <Project />
+        <Skills />
         <Education />
-
-        {/* <Mint /> */}
       </section>
     </>
   );

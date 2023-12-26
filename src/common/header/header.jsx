@@ -51,11 +51,7 @@ const Header = (params) => {
       url: "/#about",
       as: HashLink,
     },
-    {
-      menu: "Skills",
-      url: "/#skills",
-      as: HashLink,
-    },
+
     {
       menu: "Work Experiences",
       url: "/#experiences",
@@ -64,6 +60,11 @@ const Header = (params) => {
     {
       menu: " Project",
       url: "/#project",
+      as: HashLink,
+    },
+    {
+      menu: "Skills",
+      url: "/#skills",
       as: HashLink,
     },
     {
