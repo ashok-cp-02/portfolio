@@ -1,3 +1,25 @@
+// AS Portfolio Images
+import As1 from "./img/as-portfolio/as1.png";
+import As2 from "./img/as-portfolio/as2.png";
+import As3 from "./img/as-portfolio/as3.png";
+import As4 from "./img/as-portfolio/as4.png";
+import As5 from "./img/as-portfolio/as5.png";
+import As6 from "./img/as-portfolio/as6.png";
+import As7 from "./img/as-portfolio/as7.png";
+import As8 from "./img/as-portfolio/as8.png";
+import As9 from "./img/as-portfolio/as9.png";
+import As10 from "./img/as-portfolio/as10.png";
+import As11 from "./img/as-portfolio/as11.png";
+import As12 from "./img/as-portfolio/as12.png";
+import As13 from "./img/as-portfolio/as13.png";
+import As14 from "./img/as-portfolio/as14.png";
+import As15 from "./img/as-portfolio/as15.png";
+import As16 from "./img/as-portfolio/as16.png";
+import As17 from "./img/as-portfolio/as17.png";
+import As18 from "./img/as-portfolio/as18.png";
+import As19 from "./img/as-portfolio/as19.png";
+import As20 from "./img/as-portfolio/as20.png";
+
 // fk images
 import FKBanner from "./img/fk/banner2.png";
 import FKimg1 from "./img/fk/banner1.png";
@@ -11,6 +33,13 @@ import FKimg8 from "./img/fk/fk5.png";
 import FKimg9 from "./img/fk/fk6.png";
 import FKimg10 from "./img/fk/fk7.png";
 import FKimg11 from "./img/fk/fk8.png";
+import FKimg12 from "./img/fk/fk9.png";
+import FKimg13 from "./img/fk/fk10.png";
+import FKimg14 from "./img/fk/fk11.png";
+import FKimg15 from "./img/fk/fk12.png";
+import FKimg16 from "./img/fk/fk13.png";
+import FKimg17 from "./img/fk/fk14.png";
+
 // fmb Images
 import FMBBanner from "./img/fmb/banner.png";
 import Fmb1 from "./img/fmb/fmb1.png";
@@ -96,6 +125,24 @@ import Neowep2 from "./img/neowep/neowep2.png";
 import Neowep3 from "./img/neowep/neowep3.png";
 import Neowep4 from "./img/neowep/neowep4.png";
 import Neowep5 from "./img/neowep/neowep5.png";
+// other Html Web
+import OtherHtml1 from "./img/other-html/web2.jpg";
+import OtherHtml2 from "./img/other-html/web3.jpg";
+import OtherHtml3 from "./img/other-html/web4.jpg";
+import OtherHtml4 from "./img/other-html/web5.jpg";
+import OtherHtml5 from "./img/other-html/web6.jpg";
+import OtherHtml6 from "./img/other-html/web1.jpg";
+// Badminton Image
+import Badmint1 from "./img/badminton/bad1.png";
+import Badmint2 from "./img/badminton/bad2.png";
+import Badmint3 from "./img/badminton/bad3.png";
+import Badmint4 from "./img/badminton/bad4.png";
+// Agriculture
+import Agri1 from "./img/agric/agri1.png";
+import Agri2 from "./img/agric/agri2.png";
+import Agri3 from "./img/agric/agri3.png";
+import Agri4 from "./img/agric/agri4.png";
+import Agri5 from "./img/agric/agri5.png";
 // skill
 import HTMLicon from "./img/skills/html5_icon.svg";
 import CSSicon from "./img/skills/css_icon.svg";
@@ -112,6 +159,49 @@ import GITicon from "./img/skills/git-icon.svg";
 // import VSCodeicon from "./img/skills/vscode.svg";
 // import Sourceicon from "./img/sourcetree-1.svg";
 const ProjectData = [
+  {
+    by: "Ashok",
+    path: "project-ashok-portfolio",
+    title: "Portfolio Website",
+    disc: [
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, and monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
+      "I have developed highly interactive single page applications and build the reusable components using React js, React Bootstrap, Material UI and various other libraries and frameworks.",
+      "I have developed highly interactive single page applications and build the reusable components using React js, React Bootstrap, Material UI and various other libraries and frameworks .",
+      "This website has the feature for a Dark and Light theme for all pages.",
+    ],
+    banner: As1,
+    type: "React Website",
+    liveurl: "https://ashok-cp-02.github.io/portfolio/",
+    status: 0,
+    date: {
+      startdate: "Dec 2023",
+      enddate: "Present",
+    },
+    tech: [Reacticon, HTMLicon, CSSicon, SASSicon, MUIicon, ReactBooticon],
+    images: [
+      { url: As1, title: "Portfolio Website 1" },
+      { url: As2, title: "Portfolio Website 2" },
+      { url: As3, title: "Portfolio Website 3" },
+      { url: As4, title: "Portfolio Website 4" },
+      { url: As5, title: "Portfolio Website 5" },
+      { url: As6, title: "Portfolio Website 6" },
+      { url: As7, title: "Portfolio Website 7" },
+      { url: As8, title: "Portfolio Website 8" },
+      { url: As9, title: "Portfolio Website 9" },
+      { url: As10, title: "Portfolio Website 10" },
+      { url: As11, title: "Portfolio Website 11" },
+      { url: As12, title: "Portfolio Website 12" },
+      { url: As13, title: "Portfolio Website 13" },
+      { url: As14, title: "Portfolio Website 14" },
+      { url: As15, title: "Portfolio Website 15" },
+      { url: As16, title: "Portfolio Website 16" },
+      { url: As17, title: "Portfolio Website 17" },
+      { url: As18, title: "Portfolio Website 18" },
+      { url: As19, title: "Portfolio Website 19" },
+      { url: As20, title: "Portfolio Website 20" },
+    ],
+  },
   {
     by: "Ashok",
     path: "project-fk",
@@ -153,6 +243,31 @@ const ProjectData = [
         url: FKimg1,
         title: "Fusion Kitchen Screenshot",
       },
+      {
+        url: FKimg12,
+        title: "Fusion Kitchen Screenshot",
+      },
+      {
+        url: FKimg13,
+        title: "Fusion Kitchen Screenshot",
+      },
+      {
+        url: FKimg14,
+        title: "Fusion Kitchen Screenshot",
+      },
+      {
+        url: FKimg15,
+        title: "Fusion Kitchen Screenshot",
+      },
+      {
+        url: FKimg16,
+        title: "Fusion Kitchen Screenshot",
+      },
+      {
+        url: FKimg17,
+        title: "Fusion Kitchen Screenshot",
+      },
+
       {
         url: FKimg2,
         title: "Fusion Kitchen Screenshot",
@@ -262,6 +377,84 @@ const ProjectData = [
       {
         url: Resta11,
         title: "Restaurant Screenshot",
+      },
+    ],
+  },
+  {
+    by: "Ashok",
+    path: "project-badminton-websites",
+    title: "Badminton Website",
+    disc: [
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
+      "Basic HTML, Bootstrap Template.",
+    ],
+    banner: Badmint1,
+    type: "HTML Website",
+    liveurl: [],
+    status: 1,
+    date: {
+      startdate: "Nov 2023",
+      enddate: "Nov 2023",
+    },
+    tech: [HTMLicon, CSSicon, JSicon, Booticon, Jqueryicon],
+    images: [
+      {
+        url: Badmint1,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: Badmint2,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: Badmint3,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: Badmint4,
+        title: "HTML Web Screenshot",
+      },
+    ],
+  },
+  {
+    by: "Ashok",
+    path: "project-garden-websites",
+    title: "Nursery Garden ",
+    disc: [
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
+      "Basic HTML, Bootstrap Template.",
+    ],
+    banner: Agri1,
+    type: "HTML Website",
+    liveurl: [],
+    status: 1,
+    date: {
+      startdate: "Nov 2023",
+      enddate: "Nov 2023",
+    },
+    tech: [HTMLicon, CSSicon, JSicon, Booticon, Jqueryicon],
+    images: [
+      {
+        url: Agri1,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: Agri2,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: Agri3,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: Agri4,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: Agri5,
+        title: "HTML Web Screenshot",
       },
     ],
   },
@@ -706,6 +899,47 @@ const ProjectData = [
       {
         url: Neowep5,
         title: "Neowep Screenshot",
+      },
+    ],
+  },
+  {
+    by: "Ashok",
+    path: "project-html-websites",
+    title: "HTML Website",
+    disc: [
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
+      "Basic HTML, Bootstrap Template.",
+    ],
+    banner: OtherHtml6,
+    type: "HTML Website",
+    liveurl: [],
+    status: 1,
+    date: {
+      startdate: "2020",
+      enddate: "2020",
+    },
+    tech: [HTMLicon, CSSicon, JSicon, Booticon, Jqueryicon],
+    images: [
+      {
+        url: OtherHtml1,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: OtherHtml2,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: OtherHtml3,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: OtherHtml4,
+        title: "HTML Web Screenshot",
+      },
+      {
+        url: OtherHtml5,
+        title: "HTML Web Screenshot",
       },
     ],
   },

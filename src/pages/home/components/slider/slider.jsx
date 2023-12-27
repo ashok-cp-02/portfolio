@@ -6,6 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import { Player } from "@lottiefiles/react-lottie-player";
 import AboutLottie from "./img/slider1.json";
+import { Link } from "react-router-dom";
 //? Components
 import myResumePDF from "../../../../common/assets/ASHOK-RESUME.pdf";
 import Contact from "../../../contact/contact";
@@ -21,6 +22,7 @@ import "./slider.scss";
 
 import { GrDocumentDownload } from "react-icons/gr";
 import { MdOutlineContacts } from "react-icons/md";
+import { CgFileDocument } from "react-icons/cg";
 
 // *******~ Import ~******** //
 
@@ -28,12 +30,12 @@ const Slider = () => {
   const [Contactshow, setContactshow] = useState(false);
 
   const ContacthandleShow = () => setContactshow(true);
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = myResumePDF;
-    link.download = "ashok-resume.pdf";
-    link.click();
-  };
+  // const handleDownload = () => {
+  //   const link = document.createElement("a");
+  //   link.href = myResumePDF;
+  //   link.download = "ashok-resume.pdf";
+  //   link.click();
+  // };
 
   return (
     <>
@@ -47,7 +49,7 @@ const Slider = () => {
                 <span>
                   <Typewriter
                     options={{
-                      strings: ["UI Developer", "React Developer"],
+                      strings: ["Sr. UI Developer", "React Developer"],
                       autoStart: true,
                       loop: true,
                     }}
@@ -69,9 +71,12 @@ const Slider = () => {
                   <MdOutlineContacts />
                   Contact Me
                 </button>
-                <button onClick={handleDownload}>
+                {/* <button onClick={handleDownload}>
                   <GrDocumentDownload /> Download CV
-                </button>
+                </button> */}
+                <Link to="/project">
+                  <CgFileDocument /> My Project
+                </Link>
               </div>
               <Social />
             </Col>

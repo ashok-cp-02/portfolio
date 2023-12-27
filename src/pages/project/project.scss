@@ -217,6 +217,22 @@
             }
           }
         }
+        &.not-avil {
+          color: #fff;
+          background-color: #ff014f;
+          border: 1px solid #ff014f;
+          width: fit-content;
+          width: -moz-fit-content;
+          cursor: not-allowed;
+          &:hover {
+            color: #ff014f;
+            background-color: transparent;
+            @include themed() {
+              border-color: t("whitecolor");
+              color: t("whitecolor");
+            }
+          }
+        }
         &.readmore-btn {
           color: #fff;
           background-color: $themecolor;

@@ -39,11 +39,10 @@ const Project = () => {
               <div className="heading">
                 <h2>Latest Project</h2>
                 <p>
-                  Explore my front-end development prowess through a curated
-                  showcase of projects, highlighting innovative designs and
-                  seamless user experiences. Each project reflects my commitment
-                  to creating visually stunning and functionally robust web
-                  applications.
+                  Explore my UI development prowess through a curated showcase
+                  of projects, highlighting innovative designs and seamless user
+                  experiences. Each project reflects my commitment to creating
+                  visually stunning and functionally robust web applications.
                 </p>
               </div>
             </Col>
@@ -77,7 +76,7 @@ export function ProjectListing({ projectlist, index }) {
   // };
   return (
     <>
-      <div className="project-box" key={index} data-aos="flip-up">
+      <div className="project-box" key={index} data-aos="fade-up">
         <Link to={`/project/${projectlist.path}`} className="img-div">
           <Image src={projectlist.banner} fluid />
           {/* <div className="overlay-shadow"></div> */}
@@ -119,15 +118,20 @@ export function ProjectListing({ projectlist, index }) {
           </div>
 
           <div className="footer-div">
-            <a
-              className="live-demo"
-              href={projectlist.liveurl}
-              target="_blank"
-              rel="noopener noreferrer"
-              title={projectlist.liveurl}
-            >
-              <TbWorld /> Live Demo
-            </a>
+            {projectlist.liveurl.length === 0 ? (
+              <a className="live-demo not-avil">URL Not Available</a>
+            ) : (
+              <a
+                className="live-demo"
+                href={projectlist.liveurl}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={projectlist.liveurl}
+              >
+                <TbWorld /> Live Demo
+              </a>
+            )}
+
             <Link className="readmore-btn" to={`/project/${projectlist.path}`}>
               More Details <IoIosArrowDropright />
             </Link>

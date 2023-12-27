@@ -115,16 +115,21 @@ const ProjectDetail = () => {
                             {statusMap[Project.status] || "Unknown Status"}
                           </p>
                         </div>
-
-                        <a
-                          className="live-demo"
-                          href={Project.liveurl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title={Project.liveurl}
-                        >
-                          <TbWorld /> Live Demo
-                        </a>
+                        {Project.liveurl.length === 0 ? (
+                          <a className="live-demo not-avil">
+                            <TbWorld /> URL Not Available
+                          </a>
+                        ) : (
+                          <a
+                            className="live-demo"
+                            href={Project.liveurl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={Project.liveurl}
+                          >
+                            <TbWorld /> Live Demo
+                          </a>
+                        )}
                       </div>
                       <div className="project-desc">
                         <h3>Responsibility:</h3>

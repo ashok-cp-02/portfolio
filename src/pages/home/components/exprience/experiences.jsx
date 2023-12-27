@@ -97,7 +97,7 @@ const Experiences = () => {
                       eventKey={`exp${index + 1}`}
                       title={`${index + 1}`}
                     >
-                      <div className="experience-content" data-aos="flip-up">
+                      <div className="experience-content" data-aos="fade-up">
                         <div className="header-div">
                           <div className="title-div">
                             <h3>{explist.Role}</h3>

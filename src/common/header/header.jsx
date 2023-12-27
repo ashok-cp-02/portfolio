@@ -10,7 +10,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-
+import Typewriter from "typewriter-effect";
 // Components
 import ThemeContext from "../theme/components/contexts/themecontexts";
 import MenuBtn from "./menubtn/menubtn";
@@ -104,7 +104,19 @@ const Header = (params) => {
                   Ashok C<p className="code">{"/>"}</p>
                 </div>
                 <div className="desgi">
-                  <p>Sr. UI DEVELOPER</p>
+                  <p>
+                    <Typewriter
+                      options={{
+                        strings: ["Sr. UI Developer", "React Developer"],
+                        autoStart: true,
+                        loop: true,
+                        deleteSpeed: 0,
+                        delay: 10,
+                        pauseFor: 3000,
+                        cursor: "",
+                      }}
+                    />
+                  </p>
                 </div>
               </Nav.Link>
             </>
