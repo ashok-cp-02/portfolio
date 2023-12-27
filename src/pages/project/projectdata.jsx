@@ -56,12 +56,46 @@ import EposBanner from "./img/eposbanner.png";
 import Epos1 from "./img/epos/epos1.png";
 // Resta 4 Images
 import RestaBanner04 from "./img/resta4.jpg";
+import Resta4_1 from "./img/resta4/resta1.png";
+import Resta4_2 from "./img/resta4/resta2.png";
 // FI Images
 import FIBanner from "./img/fi/banner.png";
+import FI1 from "./img/fi/fi1.png";
+import FI2 from "./img/fi/fi2.png";
+import FI5 from "./img/fi/fi5.jpg";
+import FI4 from "./img/fi/fi4.png";
 // Fpos Images
 import FPOSBanner from "./img/fpos/banner.png";
+import Fpos1 from "./img/fpos/fpos1.png";
+import Fpos2 from "./img/fpos/fpos2.png";
+import Fpos3 from "./img/fpos/fpos3.png";
+import Fpos4 from "./img/fpos/fpos4.png";
+import Fpos5 from "./img/fpos/fpos5.png";
+import Fpos6 from "./img/fpos/fpos6.png";
+import Fpos7 from "./img/fpos/fpos7.png";
+import Fpos8 from "./img/fpos/fpos8.png";
+import Fpos9 from "./img/fpos/fpos9.png";
+import Fpos10 from "./img/fpos/fpos10.png";
+import Fpos11 from "./img/fpos/fpos11.png";
+import Fpos12 from "./img/fpos/fpos12.png";
+import Fpos13 from "./img/fpos/fpos13.png";
+import Fpos14 from "./img/fpos/fpos14.png";
+import Fpos15 from "./img/fpos/fpos15.png";
+import Fpos16 from "./img/fpos/fpos16.png";
+import Fpos17 from "./img/fpos/fpos17.png";
+import Fpos18 from "./img/fpos/fpos18.png";
+import Fpos19 from "./img/fpos/fpos19.png";
+import Fpos20 from "./img/fpos/fpos20.png";
+import Fpos21 from "./img/fpos/fpos21.png";
+import Fpos22 from "./img/fpos/fpos22.png";
+import Fpos23 from "./img/fpos/fpos23.png";
 // Newwep Images
 import NewoBanner from "./img/neowep.png";
+import Neowep1 from "./img/neowep/neowep1.png";
+import Neowep2 from "./img/neowep/neowep2.png";
+import Neowep3 from "./img/neowep/neowep3.png";
+import Neowep4 from "./img/neowep/neowep4.png";
+import Neowep5 from "./img/neowep/neowep5.png";
 // skill
 import HTMLicon from "./img/skills/html5_icon.svg";
 import CSSicon from "./img/skills/css_icon.svg";
@@ -83,7 +117,8 @@ const ProjectData = [
     path: "project-fk",
     title: "Fusion Kitchen Website",
     disc: [
-      "This app enables users to easily order food by searching for nearby restaurants using their postal code. You can choose between options for either picking up your order or having it delivered to your location.",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, and integrating with APIs and monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
       "I have developed highly interactive single page applications and build the reusable components using React js, React Bootstrap, Material UI and various other libraries and frameworks.",
       "The listing page is equipped with a variety of filtering options and provides comprehensive restaurant details.",
       "A menu page assists users in selecting items according to their categories, and menu item`s included availability, top recommendations, and customer favourites. It also supports a feature for displaying additional item options through a pop- up, and seamlessly integrates with an API for menu data retrieval and updates.",
@@ -167,6 +202,8 @@ const ProjectData = [
     disc: [
       "UK Based restaurant template, Signle page website. This Page contain default header footer section. And animated meal deal section",
       "This website has the feature for a Dark and Light theme for all pages.",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
     ],
     banner: resta1Banner,
     type: "React Website",
@@ -235,6 +272,8 @@ const ProjectData = [
     disc: [
       "UK Based takeaway template, Signle page website. This Page contain default header footer section. And animated meal deal section",
       "This website has the feature for a Dark and Light theme for all pages.",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
     ],
     banner: takeaway1Banner,
     type: "React Website",
@@ -287,6 +326,8 @@ const ProjectData = [
     disc: [
       "UK Based restaurant template, Signle page website. This Page contain default header footer section.",
       "Basic HTML, Bootstrap Template.",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
     ],
     banner: resta2Banner,
     type: "HTML Website",
@@ -317,7 +358,8 @@ const ProjectData = [
     path: "project-fmb",
     title: "Fusion My Business Website",
     disc: [
-      "UK Based restaurant template, Signle page website. This Page contain default header footer section. And animated meal deal section",
+      "I have updating and creating new website pages and integrates with POST method API Integration, and optimizing on-page SEO for enhanced web functionality and search engine visibility.",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
     ],
     banner: FMBBanner,
     type: "React Website",
@@ -361,6 +403,9 @@ const ProjectData = [
     title: "Restaurant Template 03",
     disc: [
       "UK Based restaurant template, Signle page website. This Page contain default header footer section. And animated meal deal section",
+      "Basic HTML, Bootstrap Template.",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
     ],
     banner: RestaBanner03,
     type: "HTML Website",
@@ -403,7 +448,8 @@ const ProjectData = [
     path: "project-fi",
     title: "Fusion Innovative Website",
     disc: [
-      "UK Based restaurant template, Signle page website. This Page contain default header footer section. And animated meal deal section",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
     ],
     banner: FIBanner,
     type: "React Website",
@@ -417,7 +463,24 @@ const ProjectData = [
     images: [
       {
         url: FIBanner,
-        title: "FMB Screenshot",
+        title: "Innovative Screenshot",
+      },
+      {
+        url: FI1,
+        title: "Innovative Screenshot",
+      },
+      {
+        url: FI2,
+        title: "Innovative Screenshot",
+      },
+
+      {
+        url: FI4,
+        title: "Innovative Screenshot",
+      },
+      {
+        url: FI5,
+        title: "Innovative Screenshot",
       },
     ],
   },
@@ -428,6 +491,9 @@ const ProjectData = [
     title: "Restaurant Template 04",
     disc: [
       "UK Based restaurant template, Signle page website. This Page contain default header footer section. And animated meal deal section",
+      "Basic HTML, Bootstrap Template.",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
     ],
     banner: RestaBanner04,
     type: "HTML Website",
@@ -441,7 +507,15 @@ const ProjectData = [
     images: [
       {
         url: RestaBanner04,
-        title: "FMB Screenshot",
+        title: "Restaurant Screenshot",
+      },
+      {
+        url: Resta4_1,
+        title: "Restaurant Screenshot",
+      },
+      {
+        url: Resta4_2,
+        title: "Restaurant Screenshot",
       },
     ],
   },
@@ -450,7 +524,8 @@ const ProjectData = [
     path: "project-fpos",
     title: "FusionPOS Website",
     disc: [
-      "UK Based restaurant template, Signle page website. This Page contain default header footer section. And animated meal deal section",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
     ],
     banner: FPOSBanner,
     type: "HTML Website",
@@ -464,7 +539,99 @@ const ProjectData = [
     images: [
       {
         url: FPOSBanner,
-        title: "FMB Screenshot",
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos1,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos2,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos3,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos4,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos5,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos6,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos7,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos8,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos9,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos10,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos11,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos12,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos13,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos14,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos15,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos16,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos17,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos18,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos19,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos20,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos21,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos22,
+        title: "FPOS Screenshot",
+      },
+      {
+        url: Fpos23,
+        title: "FPOS Screenshot",
       },
     ],
   },
@@ -474,7 +641,8 @@ const ProjectData = [
     path: "project-zreport",
     title: "Z Report UI",
     disc: [
-      "UK Based restaurant template, Signle page website. This Page contain default header footer section. And animated meal deal section",
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Basic HTML, Bootstrap Template.",
     ],
     banner: EposBanner,
     type: "HTML Website",
@@ -500,7 +668,11 @@ const ProjectData = [
     by: "Ashok",
     path: "project-neowep",
     title: "Neowep Website",
-
+    disc: [
+      "The project involves gathering requirements, developing a user interface with all device responsive layouts, And monitoring and improving front end performance.",
+      "Optimizing on-page SEO for enhanced web functionality and search engine visibility.",
+      "Basic HTML, Bootstrap Template.",
+    ],
     banner: NewoBanner,
     type: "HTML Website",
     liveurl: "https://neowep.com/",
@@ -513,7 +685,27 @@ const ProjectData = [
     images: [
       {
         url: NewoBanner,
-        title: "FMB Screenshot",
+        title: "Neowep Screenshot",
+      },
+      {
+        url: Neowep1,
+        title: "Neowep Screenshot",
+      },
+      {
+        url: Neowep2,
+        title: "Neowep Screenshot",
+      },
+      {
+        url: Neowep3,
+        title: "Neowep Screenshot",
+      },
+      {
+        url: Neowep4,
+        title: "Neowep Screenshot",
+      },
+      {
+        url: Neowep5,
+        title: "Neowep Screenshot",
       },
     ],
   },

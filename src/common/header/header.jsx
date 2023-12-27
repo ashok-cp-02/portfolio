@@ -104,7 +104,7 @@ const Header = (params) => {
                   Ashok C<p className="code">{"/>"}</p>
                 </div>
                 <div className="desgi">
-                  <p>Front End Developer</p>
+                  <p>Sr. UI DEVELOPER</p>
                 </div>
               </Nav.Link>
             </>

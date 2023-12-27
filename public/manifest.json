@@ -3,17 +3,17 @@
   "name": "Ashok C | UI Developer | Front-End Developer | React Developer",
   "icons": [
     {
-      "src": "flogo192-1.png",
+      "src": "name-logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192-1.png",
+      "src": "name-logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "name-logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }

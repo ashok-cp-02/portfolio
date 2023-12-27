@@ -47,11 +47,7 @@ const Slider = () => {
                 <span>
                   <Typewriter
                     options={{
-                      strings: [
-                        "Front End Developer",
-                        "UI Developer",
-                        "React Developer",
-                      ],
+                      strings: ["UI Developer", "React Developer"],
                       autoStart: true,
                       loop: true,
                     }}

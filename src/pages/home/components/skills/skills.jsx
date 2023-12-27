@@ -155,8 +155,8 @@ const Skills = () => {
               <div className="heading">
                 <h2 data-aos="fade-up">Technical Skills</h2>
                 <p data-aos="fade-up">
-                  As a front-end developer, I am proficient in various
-                  technologies Below <br />
+                  As a UI Developer, I am Proficient in Various Technologies
+                  Below <br />
                   And Various Other Libraries And Frameworks.
                 </p>
               </div>

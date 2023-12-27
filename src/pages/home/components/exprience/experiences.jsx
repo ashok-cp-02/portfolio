@@ -77,8 +77,8 @@ const Experiences = () => {
               <div className="heading">
                 <h2 data-aos="fade-up">Professional Experience</h2>
                 <p data-aos="fade-up">
-                  Experienced Front-End Developer proficient in crafting
-                  responsive and <br /> visually appealing web interfaces.
+                  Experienced UI Developer proficient in crafting responsive and{" "}
+                  <br /> visually appealing web interfaces.
                 </p>
               </div>
             </Col>

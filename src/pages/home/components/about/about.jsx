@@ -27,9 +27,9 @@ const About = () => {
 
   const ContacthandleShow = () => setContactshow(true);
   const AboutContent = [
-    "I have over 5 years of experience in Frontend UI Development, with expertise in HTML, CSS, SASS, JavaScript, Bootstrap, and various other libraries and frameworks.",
+    "I have over 5 years of experience in UI Development, with expertise in HTML, CSS, SASS, JavaScript, Bootstrap, and various other libraries and frameworks.",
     "I have past 2 years of experience in React JS, a popular JavaScript library. I have utilized NPM along with React Bootstrap, Material UI, React Router Dom, Sass, React Icons, and other related technologies.",
-    "I possess a keen eye for detail and have the ability to translate wireframes and design concepts into pixel-perfect creations. I excel in developing highly interactive front-end user interfaces for web applications, ensuring responsive layouts.",
+    "I possess a keen eye for detail and have the ability to translate wireframes and design concepts into pixel-perfect creations. I excel in developing highly interactive user interfaces for web applications, ensuring responsive layouts.",
     "Ensured cross-browser compatibility and responsiveness using media queries and flexbox/grid layouts.",
     "Managed codebase efficiently using Git and GitHub for version control.",
   ];
@@ -48,7 +48,7 @@ const About = () => {
               <div className="heading">
                 <h2 data-aos="fade-up">About Me</h2>
                 <p data-aos="fade-up">
-                  “Crazy <span>Front End Developer</span> Who Wants to Explore
+                  “Crazy <span>Senior UI Developer</span> Who Wants to Explore
                   Every Tech Staks”
                 </p>
               </div>

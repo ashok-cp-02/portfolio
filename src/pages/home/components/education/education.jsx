@@ -60,7 +60,7 @@ const Education = () => {
                 <h2 data-aos="fade-up">Educational</h2>
                 <p data-aos="fade-up">
                   My academic journey has equipped me with the knowledge to
-                  <br /> excel in the role of Front end Developer
+                  <br /> excel in the role of UI Developer
                 </p>
               </div>
             </Col>
