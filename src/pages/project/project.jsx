@@ -1,6 +1,6 @@
 // *******~ Import ~******** //
 //? React
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 //? Assets
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -24,12 +24,24 @@ import { TbWorld } from "react-icons/tb";
 import { MdDone } from "react-icons/md";
 import { PiPlaceholderBold } from "react-icons/pi";
 import { TbProgressBolt } from "react-icons/tb";
+import { IoIosArrowDropleft } from "react-icons/io";
+// import { IoIosArrowDropright } from "react-icons/io";
 // *******~ Import ~******** //
 
 const Project = () => {
+  const itemsPerPage = 6; // Adjust the number of items per page as needed
+  const [currentPage, setCurrentPage] = useState(1);
   useEffect(() => {
     AOS.init({});
   }, []);
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo(0, 0);
+  };
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentProjects = ProjectData.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
     <>
       <section className="project-list-page">
@@ -48,13 +60,45 @@ const Project = () => {
             </Col>
           </Row>
           <Row>
-            {ProjectData.map((projectlist, index) => (
+            {currentProjects.map((projectlist, index) => (
               <>
                 <Col xxl={6} xl={6} lg={6}>
                   <ProjectListing projectlist={projectlist} index={index} />
                 </Col>
               </>
             ))}
+          </Row>
+          <Row className="justify-content-center">
+            <Col xl={12} md={12} xxl={12}>
+              <div className="pagination">
+                <button
+                  disabled={currentPage === 1}
+                  onClick={() => handlePageChange(currentPage - 1)}
+                >
+                  <IoIosArrowDropleft />
+                </button>
+                {Array.from(
+                  { length: Math.ceil(ProjectData.length / itemsPerPage) },
+                  (_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handlePageChange(index + 1)}
+                      className={currentPage === index + 1 ? "active" : ""}
+                    >
+                      {index + 1}
+                    </button>
+                  )
+                )}
+                <button
+                  disabled={
+                    currentPage === Math.ceil(ProjectData.length / itemsPerPage)
+                  }
+                  onClick={() => handlePageChange(currentPage + 1)}
+                >
+                  <IoIosArrowDropright />
+                </button>
+              </div>
+            </Col>
           </Row>
         </Container>
       </section>
@@ -69,11 +113,7 @@ export function ProjectListing({ projectlist, index }) {
     1: "Completed",
     2: "Hold",
   };
-  // const truncateDescription = (description, maxLength) => {
-  //   return description.length > maxLength
-  //     ? `${description.slice(0, maxLength)}...`
-  //     : description;
-  // };
+
   return (
     <>
       <div className="project-box" key={index} data-aos="fade-up">

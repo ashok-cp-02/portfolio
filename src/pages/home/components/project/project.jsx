@@ -61,6 +61,7 @@ const Project = () => {
                 centeredSlides={false}
                 loop={true}
                 mousewheel={true}
+                grabCursor={true}
                 className="project-swiper"
                 breakpoints={{
                   0: {
