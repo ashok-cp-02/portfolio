@@ -8,7 +8,7 @@ import Image from "react-bootstrap/Image";
 //? Components
 import Social from "../home/components/social";
 import ThemeContext from "../../common/theme/components/contexts/themecontexts";
-import myResumePDF from "../../common/assets/ASHOK-RESUME.pdf";
+import myResumePDF from "../../common/assets/Ashok-UI-Developer.pdf";
 //? CSS
 import "./contact.scss";
 //? Images
@@ -35,7 +35,7 @@ function Contact({ Contactshow, setContactshow }) {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = myResumePDF;
-    link.download = "ashok-resume.pdf"; // Change the filename as needed
+    link.download = "Ashok UI Developer.pdf"; // Change the filename as needed
     link.click();
   };
   return (

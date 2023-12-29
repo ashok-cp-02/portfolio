@@ -51,7 +51,7 @@
       font-family: $themefont;
       font-weight: 500;
       font-size: 18px;
-      border-radius: 70% 30% 30% 70%/70% 70% 30% 30%;
+      border-radius: 0px;
       transition: all ease 300ms;
       -moz-transition: all ease 300ms;
       -webkit-transition: all ease 300ms;
@@ -65,7 +65,7 @@
       &.active {
         background-color: $themecolor;
         color: #fff;
-        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        // border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
       }
       &:first-child {
         border-radius: 50px 5px 5px 50px;
@@ -82,7 +82,7 @@
       &:hover {
         background-color: $themecolor;
         color: #fff;
-        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        border-radius: 0px;
       }
       &:disabled {
         cursor: not-allowed;

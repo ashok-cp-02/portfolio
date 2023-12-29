@@ -14,7 +14,7 @@ import Typewriter from "typewriter-effect";
 // Components
 import ThemeContext from "../theme/components/contexts/themecontexts";
 import MenuBtn from "./menubtn/menubtn";
-import myResumePDF from "../assets/ASHOK-RESUME.pdf";
+import myResumePDF from "../assets/Ashok-UI-Developer.pdf";
 import Contact from "../../pages/contact/contact";
 // CSS
 import "./css/header.scss";
@@ -81,7 +81,7 @@ const Header = (params) => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = myResumePDF;
-    link.download = "ashok-resume.pdf"; // Change the filename as needed
+    link.download = "Ashok UI Developer.pdf"; // Change the filename as needed
     link.click();
   };
   return (

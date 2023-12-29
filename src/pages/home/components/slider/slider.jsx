@@ -8,7 +8,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import AboutLottie from "./img/slider1.json";
 import { Link } from "react-router-dom";
 //? Components
-import myResumePDF from "../../../../common/assets/ASHOK-RESUME.pdf";
+// import myResumePDF from "../../../../common/assets/Ashok-UI-Developer.pdf";
 import Contact from "../../../contact/contact";
 import Social from "../social";
 // CSS
@@ -20,7 +20,7 @@ import "./slider.scss";
 
 //? Icons
 
-import { GrDocumentDownload } from "react-icons/gr";
+// import { GrDocumentDownload } from "react-icons/gr";
 import { MdOutlineContacts } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 
@@ -33,7 +33,7 @@ const Slider = () => {
   // const handleDownload = () => {
   //   const link = document.createElement("a");
   //   link.href = myResumePDF;
-  //   link.download = "ashok-resume.pdf";
+  //   link.download = "Ashok UI Developer.pdf";
   //   link.click();
   // };
 
