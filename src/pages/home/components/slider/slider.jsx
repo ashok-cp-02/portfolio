@@ -57,11 +57,11 @@ const Slider = () => {
                 </span>
               </h1>
               <p>
-                "Having over 5 years of experience in building web applications
-                with a responsive layout using
+                "Having over <span>5 years of experience</span> in building web
+                applications with a responsive layout using
                 <span>
                   {" "}
-                  HTML5, CSS3, JavaScript, React.js, SASS, Bootstrap{" "}
+                  HTML5, CSS3, JavaScript, React.js, JQuery, SASS, Bootstrap{" "}
                 </span>
                 and various other libraries and frameworks."
               </p>

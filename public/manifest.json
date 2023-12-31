@@ -1,19 +1,19 @@
 {
-  "short_name": "Ashok C | UI Developer | Front-End Developer | React Developer",
-  "name": "Ashok C | UI Developer | Front-End Developer | React Developer",
+  "short_name": "Ashok C | UI Developer | React Developer",
+  "name": "Ashok C | UI Developer | React Developer",
   "icons": [
     {
-      "src": "name-logo1.png",
+      "src": "name-logo2.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "name-logo1.png",
+      "src": "name-logo2.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "name-logo1.png",
+      "src": "name-logo2.png",
       "type": "image/png",
       "sizes": "512x512"
     }
