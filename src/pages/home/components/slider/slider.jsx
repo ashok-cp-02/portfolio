@@ -52,6 +52,10 @@ const Slider = () => {
                       strings: ["Sr. UI Developer", "React Developer"],
                       autoStart: true,
                       loop: true,
+                      deleteSpeed: 0,
+                      delay: 10,
+                      pauseFor: 3000,
+                      cursor: "",
                     }}
                   />
                 </span>

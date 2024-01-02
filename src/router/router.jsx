@@ -8,9 +8,9 @@ const Routing = (params) => {
   return (
     <Routes>
       <Route exact path={"/"} element={<Home />} />
-      <Route path={"*"} element={<NotFound />} />
-      <Route path={"/project"} element={<Project />} />
       <Route path={"/project/:path"} element={<ProjectDetail />} />
+      <Route path={"/project"} element={<Project />} />
+      <Route path={"*"} element={<NotFound />} />
     </Routes>
   );
 };
