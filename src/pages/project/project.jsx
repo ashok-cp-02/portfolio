@@ -71,12 +71,12 @@ const Project = () => {
           <Row className="justify-content-center">
             <Col xl={12} md={12} xxl={12}>
               <div className="pagination">
-                <button
+                {/* <button
                   disabled={currentPage === 1}
                   onClick={() => handlePageChange(currentPage - 1)}
                 >
                   <IoIosArrowDropleft />
-                </button>
+                </button> */}
                 {Array.from(
                   { length: Math.ceil(ProjectData.length / itemsPerPage) },
                   (_, index) => (
@@ -89,14 +89,14 @@ const Project = () => {
                     </button>
                   )
                 )}
-                <button
+                {/* <button
                   disabled={
                     currentPage === Math.ceil(ProjectData.length / itemsPerPage)
                   }
                   onClick={() => handlePageChange(currentPage + 1)}
                 >
                   <IoIosArrowDropright />
-                </button>
+                </button> */}
               </div>
             </Col>
           </Row>
