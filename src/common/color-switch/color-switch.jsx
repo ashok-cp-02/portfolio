@@ -20,7 +20,10 @@ import { MdOutlineDone } from "react-icons/md";
 
 const ColorSwitch = () => {
   const { theme } = useContext(ThemeContext);
-  const [themeColor, setThemeColor] = useState("#6366f1");
+  const storedThemeColor = sessionStorage.getItem("themeColor");
+  const defaultThemeColor = storedThemeColor || "#6366f1";
+
+  const [themeColor, setThemeColor] = useState(defaultThemeColor);
   const [overlayVisible, setOverlayVisible] = useState(false);
   const handleThemeChange = (newColor) => {
     setThemeColor(newColor);
