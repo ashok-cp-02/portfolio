@@ -349,7 +349,7 @@ const ProjectData = [
     ],
     banner: Badmint1,
     type: "HTML Website",
-    liveurl: [],
+    liveurl: ["https://ashok-cp-02.github.io/badminton-websites/"],
     status: 1,
     date: {
       startdate: "Nov 2023",
@@ -386,7 +386,7 @@ const ProjectData = [
     ],
     banner: Agri1,
     type: "HTML Website",
-    liveurl: [],
+    liveurl: ["https://ashok-cp-02.github.io/nursery-garden/"],
     status: 1,
     date: {
       startdate: "Nov 2023",
