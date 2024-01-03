@@ -4,18 +4,16 @@ import ThemeContext, { initialThemeState } from "./themecontexts";
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(initialThemeState.theme);
 
-  const localStorage = window.localStorage;
-
   useEffect(() => {
-    const savedThemeLocal = localStorage.getItem("globalTheme");
+    const savedThemeSession = sessionStorage.getItem("globalTheme");
 
-    if (!!savedThemeLocal) {
-      setTheme(savedThemeLocal);
+    if (!!savedThemeSession) {
+      setTheme(savedThemeSession);
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("globalTheme", theme);
+    sessionStorage.setItem("globalTheme", theme);
   }, [theme]);
 
   return (

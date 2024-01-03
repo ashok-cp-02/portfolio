@@ -19,6 +19,9 @@ import As17 from "./img/as-portfolio/as17.png";
 import As18 from "./img/as-portfolio/as18.png";
 import As19 from "./img/as-portfolio/as19.png";
 import As20 from "./img/as-portfolio/as20.png";
+import As21 from "./img/as-portfolio/as21.png";
+import As22 from "./img/as-portfolio/as22.png";
+import As23 from "./img/as-portfolio/as23.png";
 
 // fk images
 import FKBanner from "./img/fk/banner2.png";
@@ -589,6 +592,9 @@ const ProjectData = [
       { url: As18, title: "Portfolio Website 18" },
       { url: As19, title: "Portfolio Website 19" },
       { url: As20, title: "Portfolio Website 20" },
+      { url: As21, title: "Portfolio Website 20" },
+      { url: As22, title: "Portfolio Website 20" },
+      { url: As23, title: "Portfolio Website 20" },
     ],
   },
   {
