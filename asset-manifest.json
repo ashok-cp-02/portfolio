@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.507bd79f.css",
-    "main.js": "/portfolio/static/js/main.a42e8f3f.js",
+    "main.js": "/portfolio/static/js/main.69090e53.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/ban1.png": "/portfolio/static/media/ban1.6c008a8fe0ee271ac94d.png",
     "static/media/as13.png": "/portfolio/static/media/as13.d572719467cff674233e.png",
@@ -48,6 +48,7 @@
     "static/media/as20.png": "/portfolio/static/media/as20.25c601ff288fa17f794d.png",
     "static/media/fpos1.png": "/portfolio/static/media/fpos1.54d00f346f1e341435fb.png",
     "static/media/fmb5.png": "/portfolio/static/media/fmb5.83968ee3d44e5b9a44bf.png",
+    "static/media/as21.png": "/portfolio/static/media/as21.f50242803104b21c0c4c.png",
     "static/media/fk11.png": "/portfolio/static/media/fk11.c7bdf1c482f34662469e.png",
     "static/media/detail-bg.jpg": "/portfolio/static/media/detail-bg.6c57b69fc8c8451b9752.jpg",
     "static/media/fpos11.png": "/portfolio/static/media/fpos11.fff0106919d70c50933c.png",
@@ -57,6 +58,8 @@
     "static/media/as12.png": "/portfolio/static/media/as12.f072527b46a52d7aa189.png",
     "static/media/Ashok-UI-Developer.pdf": "/portfolio/static/media/Ashok-UI-Developer.4a129900b827f2f90f36.pdf",
     "static/media/fmb4.png": "/portfolio/static/media/fmb4.cb72cc6db44ed54881b4.png",
+    "static/media/as23.png": "/portfolio/static/media/as23.0fecd6df37db5bb0797b.png",
+    "static/media/as22.png": "/portfolio/static/media/as22.d9f5f72162c4d1427ad1.png",
     "static/media/as8.png": "/portfolio/static/media/as8.34a0e32d9f9cbb7717ea.png",
     "static/media/web3.jpg": "/portfolio/static/media/web3.59db857be8c09f7a1b8d.jpg",
     "static/media/fk9.png": "/portfolio/static/media/fk9.df545a98d91d5dcb2c63.png",
@@ -144,11 +147,11 @@
     "static/media/gradient-circle.svg": "/portfolio/static/media/gradient-circle.e47cacd603d34459767d4f18f442fda6.svg",
     "static/media/material-ui-1.svg": "/portfolio/static/media/material-ui-1.fd510ed8518b192069590b04e2e6348a.svg",
     "main.507bd79f.css.map": "/portfolio/static/css/main.507bd79f.css.map",
-    "main.a42e8f3f.js.map": "/portfolio/static/js/main.a42e8f3f.js.map",
+    "main.69090e53.js.map": "/portfolio/static/js/main.69090e53.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.507bd79f.css",
-    "static/js/main.a42e8f3f.js"
+    "static/js/main.69090e53.js"
   ]
 }
