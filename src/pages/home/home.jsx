@@ -22,7 +22,7 @@ import MetData from "../seo";
 export default function Home(second) {
   return (
     <>
-      <MetData />
+      {/* <MetData /> */}
       <span id="home"></span>
       <section className="home-page">
         <Slider />

@@ -21,7 +21,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 // *******~ Import ~******** //
 
 const Experiences = () => {
-  const [key, setKey] = useState("exp3");
+  const [key, setKey] = useState("exp4");
   const ExpLists = [
     {
       Role: "Jr. UI Developer",
@@ -57,6 +57,23 @@ const Experiences = () => {
       Url: {
         Path: "https://www.fusioninnovative.com/",
         Name: "- www.fusioninnovative.com",
+      },
+      Responsibilitys: [
+        "Developing highly interactive single page applications and build the reusable components using React js, React Bootstrap, Material UI and various other libraries and frameworks.",
+        "Solid understanding of async request handling, props, and hooks.",
+        "Possess a keen eye for detail and have the ability to translate wireframes and design concepts into pixel-perfect creations.",
+        "Ensured cross-browser compatibility and responsiveness using media queries and flexbox/grid layouts.",
+        "Managed codebase efficiently using Git and GitHub for version control.",
+      ],
+    },
+    {
+      Role: "Sr. React Developer",
+      OrgName: "ISC Global Solutions Private Limited",
+      OrgSubName: "",
+      Duration: "- Jan 2024 to still",
+      Url: {
+        Path: "/",
+        Name: "",
       },
       Responsibilitys: [
         "Developing highly interactive single page applications and build the reusable components using React js, React Bootstrap, Material UI and various other libraries and frameworks.",

@@ -60,7 +60,8 @@ function Contact({ Contactshow, setContactshow }) {
 
               <Image src={Photo} fluid className="profile" />
               <h3>Ashok C</h3>
-              <p>Sr. UI Developer</p>
+              {/* <p>Sr. UI Developer</p> */}
+              <p>Sr. React Developer</p>
               <span className="location">
                 <IoLocationSharp /> Chennai, India
               </span>
